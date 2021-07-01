@@ -118,7 +118,7 @@ export default class Home extends Component {
                 </p>
                </div>
                 <div style={{padding: '2em', width: '100%'}}>
-                  <audio controls src="./audio/428.mp3" style={{width: '100%'}} />
+                  <audio controls src={process.env.PUBLIC_URL + '/audio/428.mp3'} style={{width: '100%'}} />
                 </div>
                 
                 <div className="content-update">
