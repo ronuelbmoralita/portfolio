@@ -436,7 +436,7 @@ export default class Home extends Component {
                   Interested in collaborating or investing?
                 </h2>
                 */}
-                <p className="center">
+                <p className="content-para">
                   Interested in collaborating or investing? Feel free to contact me anytime except on Saturdays. Get in touch here:
                 </p>
               </div>
