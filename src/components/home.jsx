@@ -57,7 +57,7 @@ export default class Home extends Component {
                 </p>
             </div>
             <div className="content-container">
-              <img className="school" src={path + school} alt="logo" />
+              <img className="school" src={process.env.PUBLIC_URL + '/images/school.jpg'} /> 
               <p className="content-para">
                 I studied B.Sc. in Computer Science at Eulogio “Amang” Rodriguez Institute of Science and Technology (EARIST) Class of 2019.
               </p>
