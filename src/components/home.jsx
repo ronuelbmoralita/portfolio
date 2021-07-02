@@ -1,5 +1,16 @@
 import React, { Component } from 'react';
 
+var d = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Sabbath";
+
+var n = weekday[d.getDay()];
 export default class Home extends Component {
     render() {
       return (
@@ -32,8 +43,12 @@ export default class Home extends Component {
                 </h1>
                 <div className="span-container">
                   <span style={{color: 'black'}}>
-                    How's your day?
+                    How's your <span style={{color: '#a1978d'}}>
+                    {n}?
+                    </span>
                   </span>
+                
+                  
                 </div>
               </div>
               <div className="arrow-container">
@@ -54,7 +69,7 @@ export default class Home extends Component {
                 </p>
             </div>
             <div className="content-container">
-              <img className="school" src={process.env.PUBLIC_URL + '/images/school.jpg'} /> 
+              <img className="school" src={process.env.PUBLIC_URL + '/images/school.jpg'} alt="school"/> 
               <p className="content-para">
                 I studied B.Sc. in Computer Science at Eulogio “Amang” Rodriguez Institute of Science and Technology (EARIST) Class of 2019.
               </p>
@@ -72,7 +87,7 @@ export default class Home extends Component {
               </p> 
             </div>
 
-            <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/dotbrgy.png'} alt="Logo"/>
+            <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/dotbrgy.png'} alt="dotBrgy"/>
             <p className="center">
               In development  <a className="hyper-link" href="tel:+63963510762">
                 Learn more
@@ -80,7 +95,7 @@ export default class Home extends Component {
             </p>
           
 
-            <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/transaksyonTracer.png'} alt="Logo"/>
+            <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/transaksyonTracer.png'} alt="tracer"/>
             <p className="center">
               For deployment  <a className="hyper-link" href="tel:+63963510762">
                 Learn more
@@ -90,7 +105,7 @@ export default class Home extends Component {
            
            
             {/*SDA Himno*/}
-            <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/sdaHimnoLogo.png'} alt="Logo"/>
+            <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/sdaHimnoLogo.png'} alt="himno"/>
             <p className="center">
               For deployment  <a className="hyper-link" href="tel:+63963510762">
                 Learn more
@@ -110,7 +125,7 @@ export default class Home extends Component {
               </video>
               */}
               <p className="content-para">
-                Your support will be responsible for future updates including:
+              Do you want to support the app? With some exclusive features including;
               </p>
               <div className="content-update">
                 <p>
@@ -162,32 +177,32 @@ export default class Home extends Component {
             <div className="cards-project">
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-one.png'} alt="Logo"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-one.png'} alt="himnoOne"/>
                 </div>
               </div>
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-two.png'} alt="Logo"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-two.png'} alt="himnoTwo"/>
                 </div>
               </div>
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-three.png'} alt="Logo"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-three.png'} alt="himnothree"/>
                 </div>
               </div>
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-four.png'} alt="Logo"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-four.png'} alt="himnofour"/>
                 </div>
               </div>
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-five.png'} alt="Logo"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-five.png'} alt="himnoFive"/>
                 </div>
               </div>
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-six.png'} alt="Logo"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-six.png'} alt="himnoSix"/>
                 </div>
               </div>
             </div>
@@ -223,70 +238,70 @@ export default class Home extends Component {
             <ul id="rig">
               <li>
                 <a className="rig-cell" href="https://docs.microsoft.com/en-us/dotnet/">
-                  <img className="rig-img" alt="logo" src={process.env.PUBLIC_URL + '/images/cSharp.png'} />
+                  <img className="rig-img" alt="c#" src={process.env.PUBLIC_URL + '/images/cSharp.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">C#</span>
                 </a>
               </li>
               <li>
                 <a className="rig-cell" href="https://visualstudio.microsoft.com/">
-                  <img className="rig-img" alt="logo" src={process.env.PUBLIC_URL + '/images/visualStudio.png'}/>
+                  <img className="rig-img" alt="vStudio" src={process.env.PUBLIC_URL + '/images/visualStudio.png'}/>
                   <span className="rig-overlay" />
                   <span className="rig-text">Visual Studio</span>
                 </a>
               </li>
               <li>
                 <a className="rig-cell" href="https://code.visualstudio.com/">
-                  <img className="rig-img" alt="logo" src={process.env.PUBLIC_URL + '/images/visualStudioCode.png'} />
+                  <img className="rig-img" alt="vCode" src={process.env.PUBLIC_URL + '/images/visualStudioCode.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">Visual Studio Code</span>
                 </a>
               </li>
               <li>
                 <a className="rig-cell" href="https://www.sqlite.org/index.html">
-                  <img className="rig-img" alt="logo" src={process.env.PUBLIC_URL + '/images/sqlite.png'} />
+                  <img className="rig-img" alt="sqlite" src={process.env.PUBLIC_URL + '/images/sqlite.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">SQLite</span>
                 </a>
               </li>
               <li>
                 <a className="rig-cell" href="http://materialdesigninxaml.net/">
-                  <img className="rig-img" alt="logo" src={process.env.PUBLIC_URL + '/images/theme.png'} />
+                  <img className="rig-img" alt="theme" src={process.env.PUBLIC_URL + '/images/theme.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">Material Design In XAML</span>
                 </a>
               </li>
               <li>
                 <a className="rig-cell" href="https://www.nuget.org/packages/ZXing.Net/">
-                  <img className="rig-img" alt="logo" src={process.env.PUBLIC_URL + '/images/zxing.png'} />
+                  <img className="rig-img" alt="zxing" src={process.env.PUBLIC_URL + '/images/zxing.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">ZXing.Net</span>
                 </a>
               </li>
               <li>
                 <a className="rig-cell" href="https://lvcharts.net/">
-                  <img className="rig-img" alt="logo" src={process.env.PUBLIC_URL + '/images/livecharts.png'} />
+                  <img className="rig-img" alt="lvcharts" src={process.env.PUBLIC_URL + '/images/livecharts.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">LiveCharts</span>
                 </a>
               </li>
               <li>
                 <a className="rig-cell" href="https://reactjs.org/">
-                  <img className="rig-img" alt="logo" src={process.env.PUBLIC_URL + '/images/react.png'} />
+                  <img className="rig-img" alt="react" src={process.env.PUBLIC_URL + '/images/react.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">React</span>
                 </a>
               </li>
               <li>
                 <a className="rig-cell" href="https://www.python.org/">
-                  <img className="rig-img" alt="logo" src={process.env.PUBLIC_URL + '/images/python.png'} />
+                  <img className="rig-img" alt="python" src={process.env.PUBLIC_URL + '/images/python.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">Python</span>
                 </a>
               </li>
               <li>
                 <a className="rig-cell" href="https://www.djangoproject.com/">
-                  <img className="rig-img" alt="logo" src={process.env.PUBLIC_URL + '/images/django.png'} />
+                  <img className="rig-img" alt="django" src={process.env.PUBLIC_URL + '/images/django.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">Django</span>
                 </a>
@@ -296,7 +311,7 @@ export default class Home extends Component {
           {/*
               <div className="tech-container">
                 <div className="tech">
-                  <img className="img" src={process.env.PUBLIC_URL + '/images/cSharp.png'} alt="Logo"/>
+                  <img className="img" src={process.env.PUBLIC_URL + '/images/cSharp.png'} alt="image"/>
                   <div className="center">
                   <p>About:
                     <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">
@@ -306,7 +321,7 @@ export default class Home extends Component {
                   </div>
                 </div>
                 <div className="tech">
-                  <img className="img" src={process.env.PUBLIC_URL + '/images/visualStudio.png'} alt="Logo"/>
+                  <img className="img" src={process.env.PUBLIC_URL + '/images/visualStudio.png'} alt="image"/>
                   <p className="center">
                     About:
                     <a href="https://visualstudio.microsoft.com/">
@@ -315,7 +330,7 @@ export default class Home extends Component {
                   </p>
                 </div>
                 <div className="tech">
-                  <img className="img" src={process.env.PUBLIC_URL + '/images/visualStudioCode.png'} alt="Logo"/>
+                  <img className="img" src={process.env.PUBLIC_URL + '/images/visualStudioCode.png'} alt="image"/>
                   <p className="center">
                     About:
                     <a href="https://code.visualstudio.com/">
@@ -324,7 +339,7 @@ export default class Home extends Component {
                   </p>
                 </div>
                 <div className="tech">
-                  <img className="img" src={process.env.PUBLIC_URL + '/images/sqlite.png'} alt="Logo"/>
+                  <img className="img" src={process.env.PUBLIC_URL + '/images/sqlite.png'} alt="image"/>
                   <p className="center">
                     About:
                     <a href="https://www.sqlite.org/index.html">
@@ -333,7 +348,7 @@ export default class Home extends Component {
                   </p>
                 </div>
                 <div className="tech">
-                  <img className="img" src={process.env.PUBLIC_URL + '/images/theme.png'} alt="Logo"/>
+                  <img className="img" src={process.env.PUBLIC_URL + '/images/theme.png'} alt="image"/>
                   <p className="center">
                     About:
                     <a href="http://materialdesigninxaml.net/">
@@ -342,7 +357,7 @@ export default class Home extends Component {
                   </p>
                 </div>
                 <div className="tech">
-                  <img className="img" src={process.env.PUBLIC_URL + '/images/zxing.png'} alt="Logo"/>
+                  <img className="img" src={process.env.PUBLIC_URL + '/images/zxing.png'} alt="image"/>
                   <p className="center">
                     About:
                     <a href="https://www.nuget.org/packages/ZXing.Net/">
@@ -363,7 +378,7 @@ export default class Home extends Component {
                   My interest pushes me to learn more about new tech including:
                 </p>
                 <div className="tech">
-                  <img className="img" src={process.env.PUBLIC_URL + '/images/react.png'} alt="Logo"/>
+                  <img className="img" src={process.env.PUBLIC_URL + '/images/react.png'} alt="image"/>
                   <p className="center">
                     About:
                     <a href="https://reactjs.org/">
@@ -372,7 +387,7 @@ export default class Home extends Component {
                   </p>
                 </div>
                 <div className="tech">
-                  <img className="img" src={process.env.PUBLIC_URL + '/images/python.png'} alt="Logo"/>
+                  <img className="img" src={process.env.PUBLIC_URL + '/images/python.png'} alt="image"/>
                   <p className="center">
                     About:
                     <a href="https://www.python.org/">
@@ -381,7 +396,7 @@ export default class Home extends Component {
                   </p>
                 </div>
                 <div className="tech">
-                  <img className="img" src={process.env.PUBLIC_URL + '/images/django.png'} alt="Logo"/>
+                  <img className="img" src={process.env.PUBLIC_URL + '/images/django.png'} alt="image"/>
                   <p className="center">
                     About:
                     <a href="https://www.djangoproject.com/">
