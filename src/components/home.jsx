@@ -53,7 +53,7 @@ export default class Home extends Component {
               </div>
               <div className="arrow-container">
                 <section id="arrow" className="demo">
-                  <a href="#about"><span /></a>
+                  <a><span/></a>
                 </section>
               </div>
             </div>
@@ -89,20 +89,66 @@ export default class Home extends Component {
 
             <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/dotbrgy.png'} alt="dotBrgy"/>
             <p className="center">
-              In development  <a className="hyper-link" href="tel:+63963510762">
-                Learn more
-              </a>
+              In development
             </p>
+            <div className="content-container">
+              <h2>
+                DotBrgy
+              </h2>
+              <p className="content-para">
+              A WPF application for barangay records that lets you store, edit, and retrieve resident data in a structured manner. The data collected will then be used for Purok Statistics. <a className="hyper-link" href="tel:+63963510762">
+                Learn more
+              </a> 
+              </p> 
+            </div>
           
 
             <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/transaksyonTracer.png'} alt="tracer"/>
             <p className="center">
-              For deployment  <a className="hyper-link" href="tel:+63963510762">
-                Learn more
-              </a>
+              For deployment 
             </p>
-           
-           
+            <div className="content-container">
+              <h2>
+                Transaksyon Tracer
+              </h2>
+              <p className="content-para">
+              A WPF application for the Municipal Civil Registrar Office. The system will be able to track all the transactions instantly. <a className="hyper-link" href="tel:+63963510762">
+                Learn more
+              </a> 
+              </p> 
+            </div>
+            <div className="cards-project">
+              <div className="card-projectZoom">
+                <div className="imgZoom">
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-one.png'} alt="himnoOne"/>
+                </div>
+              </div>
+              <div className="card-projectZoom">
+                <div className="imgZoom">
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-two.png'} alt="himnoTwo"/>
+                </div>
+              </div>
+              <div className="card-projectZoom">
+                <div className="imgZoom">
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-three.png'} alt="himnothree"/>
+                </div>
+              </div>
+              <div className="card-projectZoom">
+                <div className="imgZoom">
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-four.png'} alt="himnofour"/>
+                </div>
+              </div>
+              <div className="card-projectZoom">
+                <div className="imgZoom">
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-five.png'} alt="himnoFive"/>
+                </div>
+              </div>
+              <div className="card-projectZoom">
+                <div className="imgZoom">
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-six.png'} alt="himnoSix"/>
+                </div>
+              </div>
+            </div>
            
             {/*SDA Himno*/}
             <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/sdaHimnoLogo.png'} alt="himno"/>
@@ -113,10 +159,10 @@ export default class Home extends Component {
             </p>
             <div className="content-container">
               <h2>
-                Introducing SDA Himno
+                SDA Himno
               </h2>
               <p className="content-para">
-                A desktop application of the Seventh Day Adventist Hymnal. You can download the app for free. <a className="hyper-link" href="{% static 'website\assets\projects/SDAHimnoSetup.zip">Click here</a>
+                A desktop application of the Seventh Day Adventist Hymnal. You can download the app for free. <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/SDAHimnoSetup.zip'} download>Click here</a>
               </p> 
               {/*
                <video controls autoPlay>
@@ -161,11 +207,6 @@ export default class Home extends Component {
                   <h4>SDA Himno</h4>
                   <h3>SDA Himno</h3>
                 </div>  
-              {/*
-    <p>
-      I developed this app for free so you can download the executable file. <a href="{% static 'website\assets\projects/SDAHimnoSetup.zip">Click here to download</a>
-    </p>
-    */}
             </div>
             {/**/}
             <div className="content-container">
@@ -206,15 +247,11 @@ export default class Home extends Component {
                 </div>
               </div>
             </div>
-            {/*
     <div class="content-container">
-      <p>
-        Ojuola, Olusegun. “The Importance of Music in Adventist Education.” Seventh-Day Adventist Educators, 22 Oct. 2020, <a href="https://adventisteducators.org/2020/05/importance-of-music-adventist-education/">adventisteducators.org/2020/05/importance-of-music-adventist-education/.</a> 
+      <p className="content-para">
+        Ojuola, Olusegun. “The Importance of Music in Adventist Education.” Seventh-Day Adventist Educators, 22 Oct. 2020, <a className="hyper-link" href="https://adventisteducators.org/2020/05/importance-of-music-adventist-education/">adventisteducators.org/2020/05/importance-of-music-adventist-education/.</a> 
       </p>
     </div>
-  </div>
-  
-  */}
             {/*
   <div class="github">
     <span>
