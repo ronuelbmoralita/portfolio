@@ -120,7 +120,7 @@ export default class Home extends Component {
             <div className="cards-project">
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyonOne.png'} alt="transaksyonOne"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/one.png'} alt="transaksyonOne"/>
                 </div>
               </div>
               <div className="card-projectZoom">
