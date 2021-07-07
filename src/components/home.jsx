@@ -52,8 +52,8 @@ export default class Home extends Component {
                 </div>
               </div>
               <div className="arrow-container">
-                <section id="arrow" className="demo">
-                  <a><span/></a>
+                <section id="arrow" className="arrow">
+                  <p><span/></p>
                 </section>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default class Home extends Component {
                 DotBrgy
               </h2>
               <p className="content-para">
-              A WPF application for barangay records that lets you store, edit, and retrieve resident data in a structured manner. The data collected will then be used for Purok Statistics. <a className="hyper-link" href="tel:+63963510762">
+              A WPF application for barangay records that lets you store, edit, and retrieve resident data in a structured manner. The data collected will then be used for Barangay Statistics. <a className="hyper-link" href="tel:+63963510762">
                 Learn more
               </a> 
               </p> 
@@ -112,7 +112,7 @@ export default class Home extends Component {
                 Transaksyon Tracer
               </h2>
               <p className="content-para">
-              A WPF application for the Municipal Civil Registrar Office. The system will be able to track all the transactions instantly. <a className="hyper-link" href="tel:+63963510762">
+              A WPF application for the Municipal Civil Registrar Office. The system will be able to track all the daily transactions instantly. <a className="hyper-link" href="tel:+63963510762">
                 Learn more
               </a> 
               </p> 
@@ -153,9 +153,7 @@ export default class Home extends Component {
             {/*SDA Himno*/}
             <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/sdaHimnoLogo.png'} alt="himno"/>
             <p className="center">
-              For deployment  <a className="hyper-link" href="tel:+63963510762">
-                Learn more
-              </a>
+              For deployment
             </p>
             <div className="content-container">
               <h2>
@@ -247,12 +245,13 @@ export default class Home extends Component {
                 </div>
               </div>
             </div>
-    <div class="content-container">
+            {/*
+
+             <div class="content-container">
       <p className="content-para">
         Ojuola, Olusegun. “The Importance of Music in Adventist Education.” Seventh-Day Adventist Educators, 22 Oct. 2020, <a className="hyper-link" href="https://adventisteducators.org/2020/05/importance-of-music-adventist-education/">adventisteducators.org/2020/05/importance-of-music-adventist-education/.</a> 
       </p>
     </div>
-            {/*
   <div class="github">
     <span>
       <a class="calling" href="https://github.com/ronuelbmoralita">Github</a>

@@ -291,14 +291,14 @@ div.arrow-container {
   bottom: 1em;
   text-align: center;
 } 
-div.arrow-container a{
+div.arrow-container p{
    color: #000;
 }
 
-#arrow a {
+#arrow p {
   padding-top: 60px;
 }
-#arrow a span {
+#arrow p span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -551,6 +551,7 @@ div.github a{
 
 .center {
   text-align: center;
+  color: #a1978d;
 }
 
 /*END*/
