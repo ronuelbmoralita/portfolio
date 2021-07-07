@@ -120,32 +120,32 @@ export default class Home extends Component {
             <div className="cards-project">
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-one.png'} alt="himnoOne"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-one.png'} alt="transaksyonOne"/>
                 </div>
               </div>
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-two.png'} alt="himnoTwo"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-two.png'} alt="transaksyonTwo"/>
                 </div>
               </div>
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-three.png'} alt="himnothree"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-three.png'} alt="transaksyonthree"/>
                 </div>
               </div>
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-four.png'} alt="himnofour"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-four.png'} alt="transaksyonfour"/>
                 </div>
               </div>
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-five.png'} alt="himnoFive"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-five.png'} alt="transaksyonFive"/>
                 </div>
               </div>
               <div className="card-projectZoom">
                 <div className="imgZoom">
-                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-six.png'} alt="himnoSix"/>
+                  <img className="zoom" src={process.env.PUBLIC_URL + '/images/transaksyon-six.png'} alt="transaksyonSix"/>
                 </div>
               </div>
             </div>
