@@ -96,7 +96,7 @@ export default class Home extends Component {
                 DotBrgy
               </h2>
               <p className="content-para">
-              A WPF application for barangay records that lets you store, edit, and retrieve resident data in a structured manner. The data collected will then be used for Barangay Statistics. <a className="hyper-link" href="tel:+63963510762">
+                A desktop application for barangay records that lets you store, edit, and retrieve resident data in a structured manner. The data collected will then be used for Barangay Statistics. <a className="hyper-link" href="tel:+63963510762">
                 Learn more
               </a> 
               </p> 
@@ -112,7 +112,7 @@ export default class Home extends Component {
                 Transaksyon Tracer
               </h2>
               <p className="content-para">
-              A WPF application for the Municipal Civil Registrar Office. The system will be able to track all the daily transactions instantly. <a className="hyper-link" href="tel:+63963510762">
+                A desktop application for the Municipal Civil Registrar Office. The system will be able to track all the daily transactions instantly. <a className="hyper-link" href="tel:+63963510762">
                 Learn more
               </a> 
               </p> 
