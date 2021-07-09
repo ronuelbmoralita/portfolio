@@ -112,7 +112,7 @@ export default class Home extends Component {
                 Transaksyon Tracer
               </h2>
               <p className="content-para">
-                A desktop application for the Municipal Civil Registrar Office. The system will be able to track all the daily transactions instantly. <a className="hyper-link" href="tel:+63963510762">
+                A desktop application for the Municipal Civil Registrar Office. The app will be able to track all the daily transactions instantly. <a className="hyper-link" href="tel:+63963510762">
                 Learn more
               </a> 
               </p> 
