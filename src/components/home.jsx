@@ -169,7 +169,7 @@ export default class Home extends Component {
               </video>
               */}
               <p className="content-para">
-              Do you want to support the app? With some exclusive features including;
+              Do you want to support the application with some advanced features? Including:
               </p>
               <div className="content-update">
                 <p>
@@ -182,7 +182,7 @@ export default class Home extends Component {
                 
                 <div className="content-update">
                 <p>
-                  &#8718; Multilingual support. Consider the following languages:
+                  &#8718; Multilingual support. Please note that the app is currently available in Tagalog. But with your support we can make it also available in other languages ​​consider the following:
                 </p>
                </div>
                 <div className="content-lang">
@@ -196,7 +196,7 @@ export default class Home extends Component {
                   </div>
                 <div className="content-update">
                 <p>
-                  &#8718; Users can control the font size depends on their preferences.
+                  &#8718; Users will be able to control the font size depends on their preferences.
                 </p>
                </div>
                 <div className="font">
