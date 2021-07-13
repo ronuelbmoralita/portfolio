@@ -256,7 +256,7 @@ export default class Home extends Component {
 
             <div className="content-container">
               <p className="content-para">
-              With your support, We will be able to provide instruments for our church. Part of your donation will also go to REINA district-wide ministry and for the renovation of our church. To God be the Glory.
+              With your support, We will be able to provide instruments for our church. Part of your donation will also go to REINA district-wide ministry and for the renovation of our church.
               </p> 
             </div>
 
