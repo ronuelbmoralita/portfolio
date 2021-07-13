@@ -160,7 +160,7 @@ export default class Home extends Component {
                 SDA Himno
               </h2>
               <p className="content-para">
-                A desktop application of the Seventh Day Adventist Hymnal. You can download the app for free. <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/SDAHimnoSetup.zip'} download>Click here</a>
+                A desktop application of the Seventh Day Adventist Hymnal. This App contains the Tagalog hymns for your worship. The appication runs locally on the device and doesn't require anything else to be functional.
               </p> 
               {/*
                <video controls autoPlay>
@@ -173,7 +173,15 @@ export default class Home extends Component {
               </p>
               <div className="content-update">
                 <p>
-                  &#8718; Future integration of instrumental music. Here's an example.
+                  &#8718; <span className="update-color">Mac OS Compatibility.</span> The app is currently compatible with Windows operating systems only. 
+                </p> 
+               </div>
+               <div className="apple">
+               <i class="fa fa-apple"></i>
+               </div>
+              <div className="content-update">
+                <p>
+                  &#8718; <span className="update-color">Future integration of instrumental music.</span> Here's an example.
                 </p>
                </div>
                 <div style={{padding: '2em', width: '100%'}}>
@@ -182,7 +190,7 @@ export default class Home extends Component {
                 
                 <div className="content-update">
                 <p>
-                  &#8718; Multilingual support. Please note that the app is currently available in Tagalog. But with your support we can make it also available in other languages ​​consider the following:
+                  &#8718; <span className="update-color">Multilingual support.</span> Please note that the app is currently available in Tagalog. But with your support we can make it also available in other languages ​​consider the following:
                 </p>
                </div>
                 <div className="content-lang">
@@ -196,7 +204,7 @@ export default class Home extends Component {
                   </div>
                 <div className="content-update">
                 <p>
-                  &#8718; Users will be able to control the font size depends on their preferences.
+                  &#8718; Users will be able to control the <span className="update-color">font size</span> depends on their preferences.
                 </p>
                </div>
                 <div className="font">
@@ -204,7 +212,7 @@ export default class Home extends Component {
                   <h5>SDA Himno</h5>
                   <h4>SDA Himno</h4>
                   <h3>SDA Himno</h3>
-                </div>  
+                </div> 
             </div>
             {/**/}
             <div className="content-container">
@@ -244,6 +252,19 @@ export default class Home extends Component {
                   <img className="zoom" src={process.env.PUBLIC_URL + '/images/sdaHimno-six.png'} alt="himnoSix"/>
                 </div>
               </div>
+            </div>
+
+            <div className="content-container">
+              <p className="content-para">
+              With your support, We'll be able to provide instruments for our church. Part of your donation will also go to REINA district-wide ministry and for the renovation of our church.
+              </p> 
+            </div>
+
+            <div className="content-container">
+              <p className="content-para">
+              Feel free to contact me for any software bugs that will possibly occur.  Send your feedback or suggestion for better usage of the app.
+                You can download the app here. <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/SDAHimnoSetup.zip'} download>Click me</a>
+              </p> 
             </div>
             {/*
 
