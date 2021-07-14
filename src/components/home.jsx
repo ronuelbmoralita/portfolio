@@ -191,7 +191,7 @@ export default class Home extends Component {
                 
                 <div className="content-update">
                 <p>
-                  &#8718; <span className="update-color">Multilingual support.</span> Please note that the app is currently available in Tagalog. But with your support we can make it also available in other languages ​​consider the following:
+                  &#8718; <span className="update-color">Multilingual support.</span> Consider the following languages:
                 </p>
                </div>
                 <div className="content-lang">
