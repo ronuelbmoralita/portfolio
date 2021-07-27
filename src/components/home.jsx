@@ -178,7 +178,7 @@ export default class Home extends Component {
                 </p> 
                </div>
                <div className="apple">
-               <i class="fa fa-apple"></i>
+               <i className="fa fa-apple"></i>
                </div>
               <div className="content-update">
                 <p>
@@ -292,7 +292,9 @@ export default class Home extends Component {
                   These are the primary tools and programming languages that I used to build projects. 
                 </p>
               </div>
-
+              <h1 className="skill">
+                  Top expertise
+                </h1>
             <ul id="rig">
               <li>
                 <a className="rig-cell" href="https://docs.microsoft.com/en-us/dotnet/">
@@ -313,6 +315,14 @@ export default class Home extends Component {
                   <img className="rig-img" alt="vCode" src={process.env.PUBLIC_URL + '/images/visualStudioCode.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">Visual Studio Code</span>
+                </a>
+              </li>
+              
+              <li>
+                <a className="rig-cell" href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">
+                  <img className="rig-img" alt="sqlite" src={process.env.PUBLIC_URL + '/images/sqlServer.png'} />
+                  <span className="rig-overlay" />
+                  <span className="rig-text">Microsoft SQL Server</span>
                 </a>
               </li>
               <li>
@@ -343,6 +353,11 @@ export default class Home extends Component {
                   <span className="rig-text">LiveCharts</span>
                 </a>
               </li>
+              </ul>
+              <h1 className="skill">
+                  Novice at
+                </h1>
+              <ul id="rig">
               <li>
                 <a className="rig-cell" href="https://reactjs.org/">
                   <img className="rig-img" alt="react" src={process.env.PUBLIC_URL + '/images/react.png'} />
@@ -351,26 +366,12 @@ export default class Home extends Component {
                 </a>
               </li>
               <li>
-                <a className="rig-cell" href="https://www.python.org/">
-                  <img className="rig-img" alt="python" src={process.env.PUBLIC_URL + '/images/python.png'} />
-                  <span className="rig-overlay" />
-                  <span className="rig-text">Python</span>
-                </a>
-              </li>
-              <li>
-                <a className="rig-cell" href="https://www.djangoproject.com/">
-                  <img className="rig-img" alt="django" src={process.env.PUBLIC_URL + '/images/django.png'} />
-                  <span className="rig-overlay" />
-                  <span className="rig-text">Django</span>
-                </a>
-              </li>
-              <li>
                 <a className="rig-cell" href="https://www.javascript.com/">
                   <img className="rig-img" alt="django" src={process.env.PUBLIC_URL + '/images/js.png'} />
                   <span className="rig-overlay" />
                   <span className="rig-text">JavaScript</span>
                 </a>
-              </li>
+              </li> 
               <li>
                 <a className="rig-cell" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
                   <img className="rig-img" alt="django" src={process.env.PUBLIC_URL + '/images/html.png'} />
@@ -385,7 +386,14 @@ export default class Home extends Component {
                   <span className="rig-text">CSS</span>
                 </a>
               </li>
-            </ul>
+              <li>
+                <a className="rig-cell" href="https://www.python.org/">
+                  <img className="rig-img" alt="python" src={process.env.PUBLIC_URL + '/images/python.png'} />
+                  <span className="rig-overlay" />
+                  <span className="rig-text">Python</span>
+                </a>
+              </li>
+           </ul>
           </div>
           {/*
               <div className="tech-container">

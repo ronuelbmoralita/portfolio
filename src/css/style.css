@@ -688,6 +688,10 @@ div.vm p{
 }
 */
 
+.skill{
+  padding: 2em;
+}
+
 #rig {
   max-width:900px;
   margin:0 auto; /*center aligned*/
@@ -715,8 +719,8 @@ div.vm p{
       
 /* If have the image layer */
 .rig-img {
-  display:block;
-  width: 100%;
+  /*display:block;*/
+  width: 70%;
   height: auto;
   border:none;
   transform:scale(1);
