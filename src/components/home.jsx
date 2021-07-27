@@ -364,6 +364,27 @@ export default class Home extends Component {
                   <span className="rig-text">Django</span>
                 </a>
               </li>
+              <li>
+                <a className="rig-cell" href="https://www.javascript.com/">
+                  <img className="rig-img" alt="django" src={process.env.PUBLIC_URL + '/images/js.png'} />
+                  <span className="rig-overlay" />
+                  <span className="rig-text">JavaScript</span>
+                </a>
+              </li>
+              <li>
+                <a className="rig-cell" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                  <img className="rig-img" alt="django" src={process.env.PUBLIC_URL + '/images/html.png'} />
+                  <span className="rig-overlay" />
+                  <span className="rig-text">HTML</span>
+                </a>
+              </li>
+              <li>
+                <a className="rig-cell" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                  <img className="rig-img" alt="django" src={process.env.PUBLIC_URL + '/images/css.png'} />
+                  <span className="rig-overlay" />
+                  <span className="rig-text">CSS</span>
+                </a>
+              </li>
             </ul>
           </div>
           {/*
