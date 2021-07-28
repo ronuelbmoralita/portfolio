@@ -671,6 +671,10 @@ div.vm p{
   .intro-container{
     font-size: 2em;
   }
+  rig-img {
+    /*display:block;*/
+    width: 100%;
+  }
 }
 
 /*DESKTOP
