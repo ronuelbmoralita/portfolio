@@ -65,8 +65,8 @@ export default class Home extends Component {
                 About me
               </h1>
               <p className="content-para">
-                I work as a Computer Programmer at the Municipal Civil Registrar Office of Real, Quezon. Developing new and existing computer-based technologies, systems and solutions is my responsibility to contribute for company particular goal.
-                {/*During my spare time, I work on the frontend and backend of a website, desktop, and mobile application and learn new things about technology.*/}
+              I work as a Computer Programmer at the Municipal Civil Registrar of Real, Quezon. My experience developing, maintaining, debugging, and troubleshooting systems and software has fueled my curiosity in knowing new and existing technologies.           
+              {/*During my spare time, I work on the frontend and backend of a website, desktop, and mobile application and learn new things about technology.*/}
                 </p>
             </div>
             <div className="content-container">
