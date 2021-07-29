@@ -88,7 +88,11 @@ export default class Home extends Component {
               </p> 
             </div>
 
-            <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/dotbrgy.png'} alt="dotBrgy"/>
+            <a href="tel:+63963510762">
+            <div class="card img-shadow">
+              <img src={process.env.PUBLIC_URL + '/images/dotbrgy.png'} alt="dotBrgy"/>
+            </div>
+            </a> 
             <p className="center">
               In development
             </p>
@@ -97,14 +101,15 @@ export default class Home extends Component {
                 DotBrgy
               </h2>
               <p className="content-para">
-                A desktop application for barangay records that lets you store, edit, and retrieve resident data in a structured manner. The data collected will then be used for Barangay Statistics. <a className="hyper-link" href="tel:+63963510762">
-                Learn more
-              </a> 
+                A desktop application for barangay records that lets you store, edit, and retrieve resident data in a structured manner. The data collected will then be used for Barangay Statistics. 
               </p> 
             </div>
-          
 
-            <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/transaksyonTracer.png'} alt="tracer"/>
+            <a href="tel:+63963510762">
+            <div class="card img-shadow">
+              <img src={process.env.PUBLIC_URL + '/images/transaksyonTracer.png'} alt="tracer"/>
+            </div>
+            </a>
             <p className="center">
               For deployment 
             </p>
@@ -113,9 +118,7 @@ export default class Home extends Component {
                 Transaksyon Tracer
               </h2>
               <p className="content-para">
-                A desktop application for the Municipal Civil Registrar Office. The app will be able to track all the daily transactions instantly. <a className="hyper-link" href="tel:+63963510762">
-                Learn more
-              </a> 
+                A desktop application for the Municipal Civil Registrar Office. The app will be able to track all the daily transactions instantly.
               </p> 
             </div>
             <div className="cards-project">
@@ -152,7 +155,11 @@ export default class Home extends Component {
             </div>
            
             {/*SDA Himno*/}
-            <img className="img-shadow" src={process.env.PUBLIC_URL + '/images/sdaHimnoLogo.png'} alt="himno"/>
+            <a href="tel:+63963510762">
+            <div class="card img-shadow">
+              <img src={process.env.PUBLIC_URL + '/images/sdaHimnoLogo.png'} alt="himno"/>
+            </div>
+            </a>
             <p className="center">
               For deployment
             </p>
@@ -170,7 +177,7 @@ export default class Home extends Component {
               </video>
               */}
               <p className="content-para">
-              Do you want to support the application with some advanced features? Including:
+                Do you want to support the application with some advanced features? Including:
               </p>
               <div className="content-update">
                 <p>
