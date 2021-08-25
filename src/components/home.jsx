@@ -227,12 +227,14 @@ export default class Home extends Component {
               </div>
             </div>
 
+            {/*
             <div className="content-container">
               <p className="content-para">
                 Part of your donation will go to REINA district-wide ministry and for the renovation of our church. 
               </p> 
             </div>
-
+            */}
+            
             <div className="content-container">
               <p className="content-para">
                 Feel free to contact me for any software bugs that will possibly occur.  Send your feedback or suggestion for better usage of the app.
