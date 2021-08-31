@@ -97,7 +97,7 @@ export default class Home extends Component {
             </div>
             </a> 
             <p className="center">
-              In development
+              In development <i className="fa fa-wrench"></i>
             </p>
             <div className="content-container">
               <h2>
@@ -114,7 +114,7 @@ export default class Home extends Component {
             </div>
             </a>
             <p className="center">
-              For deployment 
+              For deployment <i className="fa fa-rocket"></i> 
             </p>
             <div className="content-container">
               <h2>
@@ -146,7 +146,7 @@ export default class Home extends Component {
             </div>
             </a>
             <p className="center">
-              For deployment
+              For deployment <i className="fa fa-rocket"></i> 
             </p>
             <div className="content-container">
               <h2>
