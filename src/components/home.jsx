@@ -107,6 +107,26 @@ export default class Home extends Component {
                 A desktop application for barangay records that lets you store, edit, and retrieve resident data in a structured manner. The data collected will then be used for Barangay Statistics. 
               </p> 
             </div>
+            <div className="cards-project">
+              <div className="project-container">
+                  <img className="project-img" src={process.env.PUBLIC_URL + '/images/db1.png'} alt="transaksyonOne"/>
+              </div>
+              <div className="project-container">
+                  <img className="project-img" src={process.env.PUBLIC_URL + '/images/db2.png'} alt="transaksyonTwo"/>
+              </div>
+              <div className="project-container">
+                  <img className="project-img" src={process.env.PUBLIC_URL + '/images/db3.png'} alt="transaksyonthree"/>
+              </div>
+              <div className="project-container">
+                  <img className="project-img" src={process.env.PUBLIC_URL + '/images/db4.png'} alt="transaksyonfour"/>
+                </div>
+                <div className="project-container">
+                  <img className="project-img" src={process.env.PUBLIC_URL + '/images/db5.png'} alt="transaksyonthree"/>
+              </div>
+              <div className="project-container">
+                  <img className="project-img" src={process.env.PUBLIC_URL + '/images/db6.png'} alt="transaksyonfour"/>
+                </div>
+            </div>
 
             <a href="tel:+63963510762">
             <div className="project-shadow">
