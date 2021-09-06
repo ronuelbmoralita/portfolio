@@ -125,7 +125,13 @@ export default class Home extends Component {
               </div>
               <div className="project-container">
                   <img className="project-img" src={process.env.PUBLIC_URL + '/images/db6.png'} alt="transaksyonfour"/>
-                </div>
+              </div>
+            </div>
+
+            <div className="content-container">
+              <p className="content-para">
+              Interested in a 5% commission? Please <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/DotBrgy-Letter.docx'} download>click here to download</a> the letter and contact me for information.
+              </p> 
             </div>
 
             <a href="tel:+63963510762">
