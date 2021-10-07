@@ -544,8 +544,8 @@ div.curves {
 
 /*END*/
 
-/*DESKTOP/TABLET*/
-@media only screen and (min-width: 1080px){
+
+@media only screen and (min-width: 800px){
   body {
     /*background: #36454F;*/
     margin: 0;
