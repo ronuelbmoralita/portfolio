@@ -21,6 +21,7 @@ export default class Home extends Component {
           {/*introduction*/}  
           <div className="intro" id="top">
             <div className="intro-card card-shadow">
+              {/* 
               <header>
                 <nav>
                   <div className="navbar">
@@ -30,7 +31,7 @@ export default class Home extends Component {
                       <span>W</span><span>E</span>
                       <span>l</span><span />
                     </h1>
-                    */}
+                   
                     <a  href="tel:+639635107622">
                        ronuelbmoralita.github.io/
                        </a>
@@ -42,7 +43,7 @@ export default class Home extends Component {
                   </ul>
                 </nav>
               </header>
-
+                */}
               <div className="intro-container">
               {/* 
               <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
