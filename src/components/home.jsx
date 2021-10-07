@@ -23,11 +23,16 @@ export default class Home extends Component {
               <header>
                 <nav>
                   <div className="navbar">
+                    {/* 
                     <h1 className="logo">
                       <span>O</span><span />
                       <span>W</span><span>E</span>
                       <span>l</span><span />
                     </h1>
+                    */}
+                    <a  href="tel:+639635107622">
+                       ronuelbmoralita.github.io/
+                       </a>
                   </div> 
                   <ul>
                     <li>
@@ -36,6 +41,7 @@ export default class Home extends Component {
                   </ul>
                 </nav>
               </header>
+
               <div className="intro-container">
               {/* 
               <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
@@ -49,10 +55,9 @@ export default class Home extends Component {
                     {n}?
                     </span>
                   </span>
-                
-                  
                 </div>
               </div>
+
               <div className="arrow-container">
                 <section id="arrow" className="arrow">
                   <p><span/></p>
@@ -62,11 +67,16 @@ export default class Home extends Component {
           </div>
 
           {/*about*/}
+          
+
+         
           <div className="about">
             <div className="content-container">
+            <div className="curves">
               <h1>
                 About me
               </h1>
+              </div>
               <p className="content-para">
               I work as a Computer Programmer at the Municipal Civil Registrar of Real, Quezon. My experience developing, maintaining, debugging, and troubleshooting systems and software has fueled my curiosity in knowing new and existing technologies.           
               {/*During my spare time, I work on the frontend and backend of a website, desktop, and mobile application and learn new things about technology.*/}
@@ -83,9 +93,11 @@ export default class Home extends Component {
           {/*projects*/}
           <div className="projects">
             <div className="content-container">
+            <div className="curves">
               <h1>
                 Projects
               </h1>
+              </div>
               <p className="content-para">
                 Here are some of my projects that are currently in development and for deployment.
               </p> 
@@ -271,12 +283,13 @@ export default class Home extends Component {
             {/*contacts*/}
            
             <div className="contacts" id="contact">
-            <div className="curves">
               <div className="content-container">
+              <div className="curves">
                 <h1>
                   Contacts
                 </h1>
-                <p className="content-para">
+                </div>
+                <p>
                   Interested in collaborating or investing? Feel free to contact me anytime except on Saturdays. Get in touch here:
                 </p>
               </div>
@@ -294,8 +307,6 @@ export default class Home extends Component {
               <div className="vm">
                 <p>“Let's build something that will create more.”</p>
               </div>
-            </div>
-
             </div>
             {/*end div tag*/} 
         </div>
