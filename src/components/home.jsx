@@ -12,6 +12,7 @@ weekday[6] = "Sabbath";
 
 var n = weekday[d.getDay()];
 
+
 export default class Home extends Component {
     render() {
       return (
@@ -197,7 +198,7 @@ export default class Home extends Component {
                 <source src="./videos/gcash-video.mp4" type="video/mp4" />
                 Your browser does not support HTML5 video.
               </video>
-              */}
+              
               <p className="content-para">
                 Do you want to support the application with some advanced features? Including:
               </p>
@@ -243,6 +244,7 @@ export default class Home extends Component {
                   <h4>SDA Himno</h4>
                   <h3>SDA Himno</h3>
                 </div> 
+                */}
             </div>
             <div className="content-container">
               <p className="content-para">
