@@ -21,7 +21,7 @@ body {
   /*font-family: 'Anonymous Pro', monospace;*/
   font-size: 1em;
   font-family: Consolas;
-  font-weight: lighter;
+  font-weight:normal;
 }
 
 body hr{
@@ -527,6 +527,8 @@ div.vm p{
   width: 100%;
   padding: 1em;
 }
+
+/*material you inspired*/
 
 div.curves {
   height: auto;
