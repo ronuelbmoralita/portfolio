@@ -90,7 +90,6 @@ export default class Home extends Component {
                 Here are some of my projects that are currently in development and for deployment.
               </p> 
             </div>
-
             <a href="tel:+63963510762">
             <div className="project-shadow">
               <img src={process.env.PUBLIC_URL + '/images/dotbrgy.png'} alt="dotBrgy"/>
