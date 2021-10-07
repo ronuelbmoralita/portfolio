@@ -49,6 +49,7 @@ body hr{
   padding: 1em;
   font-size: 1em;
   color: #111;
+  width: 100%;
 }
 
 .content-container ul {
@@ -486,6 +487,8 @@ div.projects{
 div.contacts {
   height: auto;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.contacts a {
@@ -521,6 +524,16 @@ div.vm p{
   padding: 1em;
 }
 
+div.curves {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 10em;
+  background-color: #65ffa0;
+  margin-bottom: 2em;
+}
+
 /*END*/
 
 /*TABLET*/
@@ -532,6 +545,17 @@ div.vm p{
     /*font-size: 1.2em;*/
     /*font-family: 'century gothic';*/
   }
+
+  div.curves {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10em;
+    background-color: #65ffa0;
+    margin-bottom: 2em;
+  }
+
   .content-container {
     width: 50%;
     margin: 0 auto;
@@ -547,8 +571,8 @@ div.vm p{
   rig-img {
     /*display:block;*/
     width: 100%;
+    }
   }
-}
 
 /*DESKTOP
 @media only screen and (min-width: 1000px){
@@ -564,4 +588,6 @@ div.vm p{
   }
 }
 */
+
+
 

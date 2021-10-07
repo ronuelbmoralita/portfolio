@@ -270,7 +270,9 @@ export default class Home extends Component {
           </div>
           
             {/*contacts*/}
+           
             <div className="contacts" id="contact">
+            <div className="curves">
               <div className="content-container">
                 <h1>
                   Contacts
@@ -294,6 +296,9 @@ export default class Home extends Component {
                 <p>“Let's build something that will create more.”</p>
               </div>
             </div>
+
+            </div>
+            {/*end div tag*/} 
         </div>
       );
     }
