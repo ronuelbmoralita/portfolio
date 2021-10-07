@@ -18,10 +18,8 @@ body {
   /*font-family: 'century gothic';*/
   /*font: 15px Montserrat, sans-serif;*/
   /*font-family: 'Anonymous Pro', monospace;*/
-  /*font-family: 'Anonymous Pro', monospace;*/
+  font-family: 'Anonymous Pro', monospace;
   font-size: 1em;
-  font-family: Consolas;
-  font-weight:normal;
 }
 
 body hr{
