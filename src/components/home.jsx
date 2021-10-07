@@ -69,8 +69,6 @@ export default class Home extends Component {
 
           {/*about*/}
           
-
-         
           <div className="about">
             <div className="content-container">
             <div className="curves">
