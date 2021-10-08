@@ -17,19 +17,7 @@ export default class Home extends Component {
     render() {
       return (
         <div>
-           <div>
-        <div id="circularMenu" className="circular-menu">
-          <a className="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
-            <i className="fa fa-bars" />
-          </a>
-          <menu className="items-wrapper">
-            <a href="#" className="menu-item fa fa-facebook" />
-            <a href="#" className="menu-item fa fa-twitter" />
-            <a href="#" className="menu-item fa fa-google-plus" />
-            <a href="#" className="menu-item fa fa-linkedin" />
-          </menu>
-        </div>
-      </div>
+
           {/*introduction*/}  
           <div className="intro" id="top">
             <div className="intro-card card-shadow">
