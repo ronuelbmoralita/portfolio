@@ -49,11 +49,11 @@ export default class Home extends Component {
               <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
               */}
                 <h1>
-                  Hi, I'm Ronuel
+                  Hi! I'm Ronuel
                 </h1>
                 <div className="span-container">
                   <span style={{color: 'black'}}>
-                    How's your <span style={{color: '#a1978d'}}>
+                    How's your <span style={{color: 'GrayText'}}>
                     {n}?
                     </span>
                   </span>
