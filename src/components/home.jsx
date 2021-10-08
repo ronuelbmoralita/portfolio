@@ -78,7 +78,7 @@ export default class Home extends Component {
               </h1>
               </div>
               <p className="content-para">
-              I work as a Computer Programmer at the Municipal Civil Registrar of Real, Quezon. My experience developing, maintaining, debugging, and troubleshooting systems and software has fueled my curiosity in knowing new and existing technologies.           
+              I work as a Computer Programmer at some Local Government Unit. My experience developing, maintaining, debugging, and troubleshooting systems and software has fueled my curiosity in knowing new and existing technologies.           
               {/*During my spare time, I work on the frontend and backend of a website, desktop, and mobile application and learn new things about technology.*/}
                 </p>
             </div>

@@ -24,7 +24,7 @@ body {
 }
 
 body hr{
-  color: #a1978d;
+  color: gray;
 }
 
 /*UNIVERSAL-ELEMENTS*/
@@ -40,7 +40,7 @@ body hr{
   width: 100%;
   font-size: 3em;
   padding: 1em;
-  color:#a1978d;
+  color:gray;
 }
 .content-container h2{
   width: 100%;
@@ -62,19 +62,19 @@ body hr{
   display: table;
   margin: 0 auto;
   list-style: square;
-  color:#a1978d;
+  color:gray;
   padding: 1em;
 }
 
 .hyper-link{
-  color: #a1978d;
+  color: gray;
   text-decoration: underline;
 }
 
 div.content-update {
   padding: 2em;
   font-size: 1em;
-  color: #a1978d;
+  color: gray;
   margin: auto 0;
   display: flex;
   justify-content: center;
@@ -185,7 +185,7 @@ header nav ul {
 
 header nav li a {
   font-size: 1em;
-  color: #a1978d;
+  color: gray;
   display: block;
   position: relative;
   padding: 20px 20px 10px;
@@ -198,7 +198,7 @@ header nav li a:before, header nav li a:after {
   height: 2px;
   display: block;
   position: absolute;
-  color: #a1978d;
+  color: gray;
   background-color: #000;
   -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;  
@@ -240,7 +240,7 @@ header nav li a:hover:before , header nav li a:hover:after {
 
 .navbar h1 span{
     display: inline-flex;
-    color: #a1978d;
+    color: gray;
 }
 
 .navbar h1 span:nth-child(even){
@@ -277,7 +277,7 @@ header nav li a:hover:before , header nav li a:hover:after {
 .intro-container{
   text-align: center;
   margin: 0;
-  color: #a1978d;
+  color: gray;
   position: absolute;
   display:inline;
   width: 100%;
@@ -501,7 +501,7 @@ div.contacts {
 }
 
 div.contacts a {
-  color: #a1978d;
+  color: gray;
   font-size: 1.5em;
   text-decoration: underline;
 }
@@ -568,7 +568,7 @@ div.curves {
     }
   
     .intro-container{
-      font-size: 1em;
+      font-size: 2em;
     }
     rig-img {
       /*display:block;*/
