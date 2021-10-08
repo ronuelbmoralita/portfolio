@@ -28,6 +28,7 @@ body hr{
 }
 
 /*UNIVERSAL-ELEMENTS*/
+/*DESKTOP*/
 
 .content-container {
   width: 50%;
@@ -548,7 +549,7 @@ div.curves {
 /*END*/
 
 
-  /*DESKTOP/TABLET*/
+  /*MOBILE*/
   @media only screen and (max-width: 800px){
     body {
       /*background: #36454F;*/
@@ -559,7 +560,7 @@ div.curves {
     }
   
     .content-container {
-      width: 80%;
+      width: 100%;
     }
   
     .intro-container img{
@@ -567,28 +568,12 @@ div.curves {
     }
   
     .intro-container{
-      font-size: 1.5em;
+      font-size: 1em;
     }
     rig-img {
       /*display:block;*/
       width: 100%;
       }
     }
-
-/*DESKTOP
-@media only screen and (min-width: 1000px){
-  .content-container {
-    width: 600px;
-    margin: 0 auto;
-  }
-  .img-me {
-    width: 100%;
-  }
-  .card-shadow {
-    height: 800px;
-  }
-}
-*/
-
 
 
