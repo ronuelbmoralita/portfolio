@@ -305,9 +305,11 @@ export default class Home extends Component {
                   <a className="gmail" href="mailto: moralitaronuel@gmail.com">Email</a>
                 </span>
               </div>  
+              {/* 
               <div className="vm">
                 <p>“Let's build something that will create more.”</p>
               </div>
+               */}
             </div>
             {/*end div tag*/} 
         </div>
