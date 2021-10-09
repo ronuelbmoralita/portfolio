@@ -19,7 +19,7 @@ export default class Home extends Component {
         <div>
 
           {/*introduction*/}  
-          <div className="intro" id="top">
+          <div id="top">
             <div className="intro-card card-shadow">
               {/* 
               <header>

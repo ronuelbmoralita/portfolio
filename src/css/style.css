@@ -19,8 +19,6 @@ body {
   /*font: 15px Montserrat, sans-serif;*/
   /*font-family: 'Anonymous Pro', monospace;*/
   font-family: 'Anonymous Pro', monospace;
-  font-size: 1.5em;
-  
 }
 
 
@@ -28,6 +26,7 @@ body {
 /*DESKTOP*/
 
 .content-container {
+  font-size: 1.5em;
   width: 50%;
   margin: 0 auto;
 }
@@ -35,7 +34,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  font-size: 3em;
   padding: 1em;
   color:gray;
 }
@@ -49,7 +47,6 @@ body {
 .content-para{
   text-align: left;
   padding: 1em;
-  font-size: 1em;
   color: #111;
   width: 100%;
 }
@@ -70,7 +67,6 @@ body {
 
 div.content-update {
   padding: 2em;
-  font-size: 1em;
   color: gray;
   margin: auto 0;
   display: flex;
@@ -90,7 +86,6 @@ div.content-lang p{
 }
 
 div.apple{
-  font-size: 5em;
   width: 100%;
   color: black;
 }
@@ -111,13 +106,11 @@ video {
 .lang {
   margin: 0 auto;
   text-align: center;
-  font-size: 1em;
 }
 
 .font {
   margin: 0 auto;
   text-align: center;
-  font-size: 2.5em;
 }
 
 
@@ -272,6 +265,7 @@ header nav li a:hover:before , header nav li a:hover:after {
 /*INTRO-CONTAINER*/
 
 .intro-container{
+  font-size: 4em;
   text-align: center;
   margin: 0;
   color: gray;
@@ -280,7 +274,6 @@ header nav li a:hover:before , header nav li a:hover:after {
   width: 100%;
   top: 50%;
   left: 50%;
-  font-size: 2em;
   transform: translate(-50%, -50%) 
 }
 
@@ -293,7 +286,6 @@ header nav li a:hover:before , header nav li a:hover:after {
 
 .span-container{
   text-align: center;
-  font-size: 1em;
   padding: 1em;
 }
 
@@ -499,7 +491,6 @@ div.contacts {
 
 div.contacts a {
   color: gray;
-  font-size: 2em;
   text-decoration: underline;
 }
 
@@ -509,6 +500,7 @@ div.contacts span{
 }
 
 div.social {
+  font-size: 5em;
   width: 100%;
   padding-top: 2em;
   text-align: center;
@@ -524,17 +516,16 @@ div.social {
   color: #DB4437;
 }
 
-/*
 div.vm p{
   text-align: center;
   width: 100%;
   padding: 1em;
 }
-*/
 
 /*material you inspired*/
 
 div.curves {
+  font-size: 2em;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -548,32 +539,37 @@ div.curves {
 /*END*/
 
 
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+
+
   /*MOBILE*/
-  @media only screen and (max-width: 800px){
-    body {
-      /*background: #36454F;*/
-      margin: 0;
-      font-size: 1em;
-      /*font-size: 1.2em;*/
-      /*font-family: 'century gothic';*/
-    }
-  
-    .content-container {
-      width: 100%;
-    }
-  
-    .intro-container img{
-      width: 15%;
-    }
-  
+  @media only screen and (max-width: 1024px){
     .intro-container{
       font-size: 2em;
     }
-    rig-img {
-      /*display:block;*/
+    .content-container {
+      font-size: 1em;
       width: 100%;
-      }
     }
+    div.curves {
+      font-size: 1.5em;
+    }
+    div.social {
+      font-size: 1.5em;
+    }
+}
 
 
 
