@@ -26,11 +26,12 @@ body {
 /*DESKTOP*/
 
 .content-container {
-  font-size: 1.5em;
+  font-size: 2em;
   width: 50%;
   margin: 0 auto;
 }
 .content-container h1{
+  font-size: 1.5em;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -398,10 +399,12 @@ div.projects{
 /*CARD-PROJECTS*/
 
 .project-shadow {
+  margin-left: auto;
+  margin-right: auto;
   background: #fff;
   display: inline-block;
-  height: 300px;
-  width: 300px;
+  height: 20em;
+  width: 20em;
   margin: 1rem;
   position: relative;
   border-radius: 1em;
@@ -500,7 +503,7 @@ div.contacts span{
 }
 
 div.social {
-  font-size: 5em;
+  font-size: 4em;
   width: 100%;
   padding-top: 2em;
   text-align: center;
@@ -525,15 +528,20 @@ div.vm p{
 /*material you inspired*/
 
 div.curves {
-  font-size: 2em;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  text-align: center;
+  font-size: 2em;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
   width: 100%;
   border-radius: 10em;
   background-color: #65ffa0;
+}
+
+.center{
+  text-align: center;
 }
 
 /*END*/
@@ -555,7 +563,7 @@ div.curves {
 
 
   /*MOBILE*/
-  @media only screen and (max-width: 1024px){
+  @media screen and (max-width: 600px) {
     .intro-container{
       font-size: 2em;
     }
