@@ -69,7 +69,6 @@ function App() {
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
           <Jump>
-             old
             <h1>
               Hi! I'm Ronuel
             </h1>
@@ -108,16 +107,14 @@ function App() {
             </p>
             </Fade>
         </div>
-        {/*
         <div className="content-container">
-        <Pulse>
+        <Fade bottom>
           <img className="school" src={process.env.PUBLIC_URL + '/images/school.jpg'} alt="school"/> 
-         </Pulse>
+         </Fade>
           <p className="content-para">
             I studied B.Sc. in Computer Science at Eulogio “Amang” Rodriguez Institute of Science and Technology (EARIST) Class of 2019.
           </p>
         </div>
-        */}
       </div>
 
       {/*PROJECTS*/}
@@ -449,11 +446,21 @@ function App() {
             </Fade>
             <Fade right>
             <p className="content-para">
-              Interested in collaborating or investing? Feel free to contact me anytime except on Saturdays. Get in touch here:
+              Feel free to contact me anytime except on Saturdays. Get in touch here:
             </p>
             </Fade>
           </div>
-         
+          <div className="social">
+            <span>
+              <a className="calling" href="tel:+63963510762">Call</a>
+            </span>
+            <span>
+              <a className="fb" href="https://www.facebook.com/ronuel06">Facebook</a>
+            </span>
+            <span>
+              <a className="gmail" href="mailto: moralitaronuel@gmail.com">Email</a>
+            </span>
+          </div>  
           {/* 
           <div className="vm">
             <p>“Let's build something that will create more.”</p>

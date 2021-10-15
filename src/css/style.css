@@ -402,6 +402,7 @@ div.projects{
 }
 
 .project-shadow img{
+  padding: 2em;
   height: 100%;
   width: 100%;
 }
@@ -495,7 +496,7 @@ div.contacts span{
 div.social {
   font-size: 1.5em;
   width: 100%;
-  padding-top: 2em;
+  padding-top: 1em;
   text-align: center;
 }
 
@@ -542,13 +543,13 @@ div.services {
 }
 
 div.services i {
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-size: 6em;
 }
 
 div.services p{
- padding: 2em;
+ padding: 1em;
 }
 
 /*END*/
