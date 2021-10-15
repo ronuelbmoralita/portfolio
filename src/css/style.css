@@ -468,11 +468,11 @@ div.projects{
 }
 
 .project-container {
+  margin-bottom: 1rem;
   flex: 1 30rem;
   max-width: 30rem;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
 }
 
 .project-img {
@@ -493,6 +493,7 @@ div.contacts {
 
 div.contacts a {
   color: gray;
+  text-decoration: underline;
 }
 
 div.contacts span{
@@ -501,7 +502,7 @@ div.contacts span{
 }
 
 div.social {
-  font-size: 3em;
+  font-size: 4em;
   width: 100%;
   padding-top: 2em;
   text-align: center;
@@ -540,8 +541,6 @@ div.curves {
   text-align: center;
 }
 
-
-
 div.services {
   text-align: center;
   height: auto;
@@ -570,6 +569,7 @@ div.services p{
       font-size: 2em;
     }
     .content-container {
+      font-size: 1em;
       width: 100%;
     }
     div.curves {
