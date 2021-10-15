@@ -69,7 +69,7 @@ function App() {
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
           <Jump>
-              new
+             old
             <h1>
               Hi! I'm Ronuel
             </h1>
@@ -451,17 +451,7 @@ function App() {
             </p>
             </Fade>
           </div>
-          <div className="social">
-            <span>
-              <a className="calling" href="tel:+63963510762">Call</a>
-            </span>
-            <span>
-              <a className="fb" href="https://www.facebook.com/ronuel06">Facebook</a>
-            </span>
-            <span>
-              <a className="gmail" href="mailto: moralitaronuel@gmail.com">Email</a>
-            </span>
-          </div>  
+         
           {/* 
           <div className="vm">
             <p>“Let's build something that will create more.”</p>
