@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  margin: 0;
   /*font-family: 'century gothic';*/
   /*font: 15px Montserrat, sans-serif;*/
   /*font-family: 'Anonymous Pro', monospace;*/
@@ -25,6 +24,8 @@ body {
 /*DESKTOP*/
 
 .content-container {
+  margin-left: auto;
+  margin-right: auto;
   font-size: 2em;
   width: 50%;
   margin: 0 auto;
@@ -493,7 +494,6 @@ div.contacts {
 
 div.contacts a {
   color: gray;
-  text-decoration: underline;
 }
 
 div.contacts span{
@@ -502,7 +502,7 @@ div.contacts span{
 }
 
 div.social {
-  font-size: 4em;
+  font-size: 3em;
   width: 100%;
   padding-top: 2em;
   text-align: center;
