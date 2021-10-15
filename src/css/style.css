@@ -403,8 +403,8 @@ div.projects{
   margin-right: auto;
   background: #fff;
   display: inline-block;
-  height: 20em;
-  width: 20em;
+  height: 15em;
+  width: 15em;
   margin: 1rem;
   position: relative;
   border-radius: 1em;
@@ -436,15 +436,8 @@ div.projects{
   transition: 0.5s;
   color: black;
 }
-
-/*
-.project-shadow:hover{
-  padding-right: 90px;
-  padding-left:8px;
-}
-*/
-
-.project-shadow:hover:after {
+.project-
+shadow:hover:after {
   opacity: 1;
   right: 5px;
 }
@@ -529,7 +522,6 @@ div.vm p{
 div.curves {
   font-size: 1.5em;
   text-align: center;
-  height: auto;
   margin-top: 1em;
   margin-bottom: 1em;
   width: 100%;
