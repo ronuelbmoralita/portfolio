@@ -28,7 +28,8 @@ body {
   margin-right: auto;
   font-size: 2em;
   width: 50%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .content-container h1{
   font-size: 1.5em;
@@ -42,7 +43,8 @@ body {
   width: 100%;
   text-align: center;
   color:black;
-  padding: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .content-para{
@@ -123,6 +125,7 @@ video {
 
 /*NAVBAR*/
 
+/*
 ul, ol { 
   list-style: none; 
 }
@@ -225,7 +228,6 @@ header nav li a:hover:before , header nav li a:hover:after {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    /*font-family: arial rounded mt;*/
     cursor: pointer;
 }
 
@@ -276,13 +278,6 @@ header nav li a:hover:before , header nav li a:hover:after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) 
-}
-
-.intro-container img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .span-container{
@@ -376,14 +371,13 @@ div.arrow-container p{
 /*ABOUT*/
 
 .about{
-  height: auto;
   width: 100%;
 }
 
 /*SCHOOL-IMAGE*/
 
 .school {
-  padding: 20px;
+  padding: 1em;
   width: 100%;
 }
 
@@ -403,8 +397,8 @@ div.projects{
   margin-right: auto;
   background: #fff;
   display: inline-block;
-  height: 15em;
-  width: 15em;
+  height: 20em;
+  width: 20em;
   margin: 1rem;
   position: relative;
   border-radius: 1em;
@@ -436,8 +430,15 @@ div.projects{
   transition: 0.5s;
   color: black;
 }
-.project-
-shadow:hover:after {
+
+/*
+.project-shadow:hover{
+  padding-right: 90px;
+  padding-left:8px;
+}
+*/
+
+.project-shadow:hover:after {
   opacity: 1;
   right: 5px;
 }
@@ -561,7 +562,6 @@ div.services p{
       font-size: 2em;
     }
     .content-container {
-      font-size: 1em;
       width: 100%;
     }
     div.curves {

@@ -69,13 +69,13 @@ function App() {
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
           <Jump>
-            new
+            old
             <h1>
               Hi! I'm Ronuel
             </h1>
             <div className="span-container">
               <span style={{color: 'black'}}>
-                How's your <span style={{color: 'GrayText'}}>
+                How's your <span style={{color: 'gray'}}>
                 {n}?
                 </span>
               </span>
