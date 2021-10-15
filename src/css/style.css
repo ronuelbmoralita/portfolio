@@ -21,22 +21,19 @@ body {
 
 
 /*UNIVERSAL-ELEMENTS*/
-/*DESKTOP*/
+/*MOBILE*/
 
 .content-container {
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 2em;
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 .content-container h1{
-  font-size: 1.5em;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   color:gray;
 }
 .content-container h2{
@@ -54,6 +51,7 @@ body {
   width: 100%;
 }
 
+/*
 .content-container ul {
   list-style-position: inside;
   display: table;
@@ -62,6 +60,7 @@ body {
   color:gray;
   padding: 1em;
 }
+*/
 
 .hyper-link{
   color: gray;
@@ -115,9 +114,6 @@ video {
   margin: 0 auto;
   text-align: center;
 }
-
-
-/*MOBILE SCREEN*/
 
 .intro {
   width: 100%;
@@ -268,9 +264,8 @@ header nav li a:hover:before , header nav li a:hover:after {
 /*INTRO-CONTAINER*/
 
 .intro-container{
-  font-size: 4em;
+  font-size: 1.5em;
   text-align: center;
-  margin: 0;
   color: gray;
   position: absolute;
   display:inline;
@@ -397,8 +392,8 @@ div.projects{
   margin-right: auto;
   background: #fff;
   display: inline-block;
-  height: 20em;
-  width: 20em;
+  height: 15em;
+  width: 15em;
   margin: 1rem;
   position: relative;
   border-radius: 1em;
@@ -407,7 +402,6 @@ div.projects{
 .project-shadow img{
   height: 100%;
   width: 100%;
-  padding: 1em;
 }
 
 .project-shadow {
@@ -444,11 +438,12 @@ div.projects{
 }
 
 .cards-project {
-  padding: 1rem;
+  padding: 1em;
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  width: 100%;
   /*box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
 }
 
@@ -496,7 +491,7 @@ div.contacts span{
 }
 
 div.social {
-  font-size: 3em;
+  font-size: 1.5em;
   width: 100%;
   padding-top: 2em;
   text-align: center;
@@ -556,19 +551,18 @@ div.services p{
 
 /*END*/
 
-  /*MOBILE*/
-  @media screen and (max-width: 800px) {
+  /*DESKTOP*/
+  @media screen and (min-width: 800px) {
     .intro-container{
-      font-size: 2em;
+      width: 100%;
+      font-size: 4em;
     }
     .content-container {
-      width: 100%;
-    }
-    div.curves {
       font-size: 1.5em;
+      width: 50%;
     }
     div.social {
-      font-size: 1.5em;
+      font-size: 3em;
     }
 }
 
