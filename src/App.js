@@ -26,6 +26,7 @@ var n = weekday[d.getDay()];
 
 
 function App() {
+  {/*
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
@@ -33,7 +34,7 @@ function App() {
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, []);*/}
     return (
       <div>
 
@@ -68,7 +69,7 @@ function App() {
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
           <Jump>
-            new
+            old
             <h1>
               Hi! I'm Ronuel
             </h1>
