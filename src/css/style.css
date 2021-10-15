@@ -13,6 +13,8 @@ html {
 }
 
 body {
+  margin-left: auto;
+  margin-right: auto;
   /*font-family: 'century gothic';*/
   /*font: 15px Montserrat, sans-serif;*/
   /*font-family: 'Anonymous Pro', monospace;*/
