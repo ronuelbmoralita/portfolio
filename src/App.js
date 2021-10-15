@@ -4,6 +4,9 @@ import Home from './components/home';
 import './css/style.css';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
+import Jump from 'react-reveal/Jump';
+import Pulse from 'react-reveal/Pulse';
+
 
 //import Sample from './components/image'
 
@@ -63,10 +66,10 @@ function App() {
           {/* 
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
-            <h1 style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
+            <h1>
               Hi! I'm Ronuel
             </h1>
-            <div className="span-container" style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
+            <div className="span-container">
               <span style={{color: 'black'}}>
                 How's your <span style={{color: 'GrayText'}}>
                 {n}?
@@ -101,9 +104,9 @@ function App() {
             </Fade>
         </div>
         <div className="content-container">
-        <Zoom right>
+        <Pulse>
           <img className="school" src={process.env.PUBLIC_URL + '/images/school.jpg'} alt="school"/> 
-          </Zoom>
+         </Pulse>
           <p className="content-para">
             I studied B.Sc. in Computer Science at Eulogio “Amang” Rodriguez Institute of Science and Technology (EARIST) Class of 2019.
           </p>
@@ -301,18 +304,26 @@ function App() {
           </p> 
         </div>
         <div className="cards-project">
+        <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/sdaHimno-one.png'} alt="himnoOne"/>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/sdaHimno-two.png'} alt="himnoTwo"/>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/sdaHimno-three.png'} alt="himnothree"/>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/sdaHimno-four.png'} alt="himnofour"/>
           </div>
+          </Fade>
         </div>
 
         {/*
@@ -347,16 +358,22 @@ function App() {
        
         <div className="contacts" id="contact">
           <div className="content-container">
+          <Fade left>
           <div className="curves">
             <h1>
               Contacts
             </h1>
             </div>
+            </Fade>
+            <Fade right>
             <p className="content-para">
               Interested in collaborating or investing? Feel free to contact me anytime except on Saturdays. Get in touch here:
             </p>
+            </Fade>
           </div>
+
           <div className="social">
+          
             <span>
               <a className="calling" href="tel:+63963510762">Call</a>
             </span>
@@ -366,6 +383,7 @@ function App() {
             <span>
               <a className="gmail" href="mailto: moralitaronuel@gmail.com">Email</a>
             </span>
+           
           </div>  
           {/* 
           <div className="vm">
