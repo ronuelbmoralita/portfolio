@@ -69,7 +69,7 @@ function App() {
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
           <Jump>
-             new
+             old
             <h1>
               Hi! I'm Ronuel
             </h1>
@@ -108,6 +108,7 @@ function App() {
             </p>
             </Fade>
         </div>
+        {/*
         <div className="content-container">
         <Pulse>
           <img className="school" src={process.env.PUBLIC_URL + '/images/school.jpg'} alt="school"/> 
@@ -116,6 +117,7 @@ function App() {
             I studied B.Sc. in Computer Science at Eulogio “Amang” Rodriguez Institute of Science and Technology (EARIST) Class of 2019.
           </p>
         </div>
+        */}
       </div>
 
       {/*PROJECTS*/}
