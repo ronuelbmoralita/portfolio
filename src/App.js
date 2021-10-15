@@ -383,9 +383,9 @@ function App() {
              Services
             </h1>
             </div>
-            <p className="content-para">
+            <h2>
               You name it I build it.
-            </p>
+            </h2>
           </div>
 
          
@@ -443,6 +443,11 @@ function App() {
               Contacts
             </h1>
             </div>
+            <Jump>
+            <h1 className="center">
+              Let's Connect
+            </h1>
+            </Jump>
             </Fade>
             <Fade right>
             <p className="content-para">

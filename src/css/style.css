@@ -15,9 +15,6 @@ html {
 body {
   margin-left: auto;
   margin-right: auto;
-  /*font-family: 'century gothic';*/
-  /*font: 15px Montserrat, sans-serif;*/
-  /*font-family: 'Anonymous Pro', monospace;*/
   font-family: 'Anonymous Pro', monospace;
 }
 
@@ -543,13 +540,13 @@ div.services {
 }
 
 div.services i {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  padding: .5em;
   font-size: 6em;
 }
 
 div.services p{
- padding: 1em;
+  font-size: 1.5em;
+  padding: 1em;
 }
 
 /*END*/
