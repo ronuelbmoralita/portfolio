@@ -6,6 +6,7 @@ import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
 import Pulse from 'react-reveal/Pulse';
+import AliceCarousel from 'react-alice-carousel';
 
 
 //import Sample from './components/image'
@@ -115,7 +116,8 @@ function App() {
         </div>
       </div>
 
-      {/*projects*/}
+      {/*PROJECTS*/}
+
       <div className="projects">
         <div className="content-container">
         <Fade left>
@@ -131,6 +133,10 @@ function App() {
           </p> 
           </Fade>
         </div>
+
+
+         {/*DotBrgy*/}
+
         <div className="center">
         <a href="tel:+63963510762">
         <div className="project-shadow">
@@ -150,6 +156,7 @@ function App() {
             A desktop application for barangay records that lets you store, edit, and retrieve resident data in a structured manner. The data collected will then be used for Barangay Statistics. 
           </p> 
         </div>
+
         <div className="cards-project">
         <Fade bottom>
           <div className="project-container">
@@ -188,6 +195,9 @@ function App() {
           Interested in a 5% commission? Please <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/DotBrgy-Letter.docx'} download>click here to download</a> the letter and contact me for information.
           </p> 
         </div>
+
+         {/*Transaksyon Tracer*/}
+
         <div className="center">
         <a href="tel:+63963510762">
         <div className="project-shadow">
@@ -228,7 +238,7 @@ function App() {
             </div>
             </Fade>
         </div>
-       
+
         {/*SDA Himno*/}
         <div className="center">
         <a href="tel:+63963510762">
@@ -300,6 +310,7 @@ function App() {
             </div> 
             */}
         </div>
+
         <div className="content-container">
           <p className="content-para">
             "Music has been identified as one of the rich heritages of the Seventh-day Adventist church".  
@@ -343,6 +354,27 @@ function App() {
           </p> 
         </div>
       </div>
+
+      {/*AYDI*/}
+
+      <div className="center">
+        <a href="tel:+63963510762">
+        <div className="project-shadow">
+          <img src={process.env.PUBLIC_URL + '/images/AYDI-ICON-BLACK.png'} alt="tracer"/>
+        </div>
+        </a>
+        <p className="center" style={{color: "gray"}}>
+          In deployment <i className="fa fa-wrench"></i> 
+        </p>
+        </div>
+        <div className="content-container">
+          <h2 style={{color: "gray"}}>
+            AYDI
+          </h2>
+          <p className="content-para" style={{color: "gray"}}>
+            The app is under development.
+          </p> 
+        </div>
       
       <div className="content-container">
           <div className="curves">
@@ -350,10 +382,54 @@ function App() {
              Services
             </h1>
             </div>
-            <p>
+            <p className="content-para">
               You name it I build it.
             </p>
           </div>
+
+         
+          <div className="cards-project">
+        <Fade bottom>
+          <div className="project-container">
+            <div className="services">
+            <i class="material-icons">desktop_windows</i>
+            <p>
+            Desktop app Development
+            </p>
+            </div>         
+          </div>
+          </Fade>
+          <Fade bottom>
+          <div className="project-container">
+          <div className="services">
+          <i class="material-icons">android</i>
+          <p>
+           Mobile app Development
+            </p>
+            </div>         
+          </div>
+          </Fade>
+          <Fade bottom>
+          <div className="project-container">
+          <div className="services">
+          <i class="material-icons">language</i>
+          <p>
+           Web app Development
+            </p>
+            </div>         
+          </div>
+          </Fade>
+          <Fade bottom>
+          <div className="project-container">
+          <div className="services">
+          <i class="material-icons">developer_mode</i>
+          <p>
+           Technical Support
+            </p>
+            </div>         
+          </div>
+          </Fade>
+        </div>
 
 
         {/*contacts*/}

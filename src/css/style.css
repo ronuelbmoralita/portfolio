@@ -492,7 +492,6 @@ div.contacts {
 
 div.contacts a {
   color: gray;
-  text-decoration: underline;
 }
 
 div.contacts span{
@@ -501,7 +500,7 @@ div.contacts span{
 }
 
 div.social {
-  font-size: 4em;
+  font-size: 3em;
   width: 100%;
   padding-top: 2em;
   text-align: center;
@@ -538,6 +537,28 @@ div.curves {
 
 .center{
   text-align: center;
+}
+
+
+
+div.services {
+  text-align: center;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  border-radius: 5em;
+  background-color: #65ffa0;
+}
+
+div.services i {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-size: 5em;
+}
+
+div.services p{
+ padding: 2em;
 }
 
 /*END*/
