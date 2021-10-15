@@ -66,6 +66,7 @@ function App() {
           {/* 
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
+          <Jump>
             <h1>
               Hi! I'm Ronuel
             </h1>
@@ -76,6 +77,7 @@ function App() {
                 </span>
               </span>
             </div>
+            </Jump>
           </div>
 
           <div className="arrow-container">
@@ -371,9 +373,7 @@ function App() {
             </p>
             </Fade>
           </div>
-
           <div className="social">
-          
             <span>
               <a className="calling" href="tel:+63963510762">Call</a>
             </span>
@@ -383,7 +383,6 @@ function App() {
             <span>
               <a className="gmail" href="mailto: moralitaronuel@gmail.com">Email</a>
             </span>
-           
           </div>  
           {/* 
           <div className="vm">
