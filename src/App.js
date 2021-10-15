@@ -68,6 +68,7 @@ function App() {
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
           <Jump>
+            new
             <h1>
               Hi! I'm Ronuel
             </h1>

@@ -1,4 +1,9 @@
 * {
+  margin: 0;
+  padding: 0;
+}
+
+* {
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -41,10 +46,8 @@ body {
 }
 
 .content-para{
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  padding: 1em;
   color: #111;
   width: 100%;
 }
