@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import './App.css';
 import Home from './components/home';
 import './css/style.css';
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 //import Sample from './components/image'
 
@@ -82,21 +84,26 @@ function App() {
       </div>
 
       {/*about*/}
-      
       <div className="about">
         <div className="content-container">
+        <Fade left>
         <div className="curves">
           <h1>
             About me
           </h1>
           </div>
+          </Fade>
+          <Fade right>
           <p className="content-para">
           I work as a Computer Programmer at some Local Government Unit. My experience developing, maintaining, debugging, and troubleshooting systems and software has fueled my curiosity in knowing new and existing technologies.           
           {/*During my spare time, I work on the frontend and backend of a website, desktop, and mobile application and learn new things about technology.*/}
             </p>
+            </Fade>
         </div>
         <div className="content-container">
+        <Zoom right>
           <img className="school" src={process.env.PUBLIC_URL + '/images/school.jpg'} alt="school"/> 
+          </Zoom>
           <p className="content-para">
             I studied B.Sc. in Computer Science at Eulogio “Amang” Rodriguez Institute of Science and Technology (EARIST) Class of 2019.
           </p>
@@ -106,14 +113,18 @@ function App() {
       {/*projects*/}
       <div className="projects">
         <div className="content-container">
+        <Fade left>
         <div className="curves">
           <h1>
             Projects
           </h1>
           </div>
+          </Fade>
+          <Fade right>
           <p className="content-para">
             Here are some of my projects that are currently in development and for deployment.
           </p> 
+          </Fade>
         </div>
         <div className="center">
         <a href="tel:+63963510762">
@@ -135,24 +146,36 @@ function App() {
           </p> 
         </div>
         <div className="cards-project">
+        <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db1.png'} alt="transaksyonOne"/>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db2.png'} alt="transaksyonTwo"/>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db3.png'} alt="transaksyonthree"/>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db4.png'} alt="transaksyonfour"/>
             </div>
+            </Fade>
+            <Fade bottom>
             <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db5.png'} alt="transaksyonthree"/>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db6.png'} alt="transaksyonfour"/>
           </div>
+          </Fade>
         </div>
 
         <div className="content-container">
@@ -179,18 +202,26 @@ function App() {
           </p> 
         </div>
         <div className="cards-project">
+        <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/transaksyonOne.png'} alt="transaksyonOne"/>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/transaksyonTwo.png'} alt="transaksyonTwo"/>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/transaksyonThree.png'} alt="transaksyonthree"/>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/transaksyonFour.png'} alt="transaksyonfour"/>
             </div>
+            </Fade>
         </div>
        
         {/*SDA Himno*/}
@@ -300,6 +331,18 @@ function App() {
         </div>
       </div>
       
+      <div className="content-container">
+          <div className="curves">
+            <h1>
+             Services
+            </h1>
+            </div>
+            <p>
+              You name it I build it.
+            </p>
+          </div>
+
+
         {/*contacts*/}
        
         <div className="contacts" id="contact">
@@ -309,7 +352,7 @@ function App() {
               Contacts
             </h1>
             </div>
-            <p>
+            <p className="content-para">
               Interested in collaborating or investing? Feel free to contact me anytime except on Saturdays. Get in touch here:
             </p>
           </div>
