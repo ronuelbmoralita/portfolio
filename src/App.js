@@ -383,7 +383,7 @@ function App() {
             </div>
             </Fade>
             <h2>
-              You name it, I'll build it!
+              You name it, I build it!
             </h2>
           </div>
 
