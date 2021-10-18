@@ -371,7 +371,8 @@ div.arrow-container p{
 /*SCHOOL-IMAGE*/
 
 .school {
-  border-radius: 4em;
+  border-radius: 2em;
+  padding: 1em;
   width: 100%;
 }
 
