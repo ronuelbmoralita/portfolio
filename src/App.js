@@ -2,11 +2,8 @@ import React, { useState, useEffect } from "react";
 import './App.css';
 import Home from './components/home';
 import './css/style.css';
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
-import Pulse from 'react-reveal/Pulse';
-import AliceCarousel from 'react-alice-carousel';
 
 
 //import Sample from './components/image'
@@ -378,13 +375,15 @@ function App() {
         </div>
       
       <div className="content-container">
+      <Fade left>
           <div className="curves">
             <h1>
              Services
             </h1>
             </div>
+            </Fade>
             <h2>
-              You name it I build it.
+              You name it, I'll build it!
             </h2>
           </div>
 
@@ -445,7 +444,7 @@ function App() {
             </div>
             <Jump>
             <h1 className="center">
-              Let's Connect
+              Let's Connect!
             </h1>
             </Jump>
             </Fade>
