@@ -371,6 +371,7 @@ div.arrow-container p{
 /*SCHOOL-IMAGE*/
 
 .school {
+  border-radius: 4em;
   padding: 1em;
   width: 100%;
 }
@@ -546,7 +547,7 @@ div.services i {
 
 div.services p{
   font-size: 1.5em;
-  padding: 1em;
+  padding: .5em;
 }
 
 /*END*/

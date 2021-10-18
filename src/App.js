@@ -395,7 +395,7 @@ function App() {
             <div className="services">
             <i class="material-icons">desktop_windows</i>
             <p>
-            Desktop app Development
+            Desktop Development
             </p>
             </div>         
           </div>
@@ -415,7 +415,7 @@ function App() {
           <div className="services">
           <i class="material-icons">language</i>
           <p>
-           Web app Development
+           Web Development
             </p>
             </div>         
           </div>
