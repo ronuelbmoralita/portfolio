@@ -377,14 +377,14 @@ function App() {
       <div className="content-container">
       <Fade left>
           <div className="curves">
-            <h1>
-             Services
+          <h1 className="center">
+              Let's Connect!
             </h1>
             </div>
             </Fade>
-            <h2>
+            <h1 className="center">
               You name it, I build it!
-            </h2>
+            </h1>
           </div>
 
          
