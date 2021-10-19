@@ -142,7 +142,7 @@ function App() {
         </div>
         </a> 
         <p>
-          In development <i class="material-icons">airplanemode_active</i>
+          In development <i class="material-icons">handyman</i>
         </p>
         </div>
        
@@ -203,7 +203,7 @@ function App() {
         </div>
         </a>
         <p className="center">
-          For deployment <i class="material-icons">handyman</i>
+          For deployment <i class="material-icons">airplanemode_active</i>
         </p>
         </div>
         <div className="content-container">
