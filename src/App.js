@@ -142,7 +142,7 @@ function App() {
         </div>
         </a> 
         <p>
-          In development <i className="fa fa-wrench"></i>
+          In development <i class="material-icons">airplanemode_active</i>
         </p>
         </div>
        
@@ -203,7 +203,7 @@ function App() {
         </div>
         </a>
         <p className="center">
-          For deployment <i className="fa fa-rocket"></i> 
+          For deployment <i class="material-icons">handyman</i>
         </p>
         </div>
         <div className="content-container">
@@ -211,7 +211,7 @@ function App() {
             Transaksyon Tracer
           </h2>
           <p className="content-para">
-            A desktop application for the Municipal Civil Registrar Office. The app will be able to track all the daily transactions instantly.
+            A desktop application for the Municipal Civil Registrar Office. The app will instantly track all the daily transactions for a better and much faster issuance of Philippine government identification documents needed for important business, job, or personal uses. 
           </p> 
         </div>
         <div className="cards-project">
@@ -245,7 +245,7 @@ function App() {
         </div>
         </a>
         <p className="center">
-          For deployment <i className="fa fa-rocket"></i> 
+          For deployment <i class="material-icons">airplanemode_active</i>
         </p>
         </div>
         <div className="content-container">
@@ -362,7 +362,7 @@ function App() {
         </div>
         </a>
         <p className="center" style={{color: "gray"}}>
-          In deployment <i className="fa fa-wrench"></i> 
+          In development <i class="material-icons">handyman</i>
         </p>
         </div>
         <div className="content-container">
