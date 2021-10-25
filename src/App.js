@@ -142,7 +142,7 @@ function App() {
         </div>
         </a> 
         <p>
-          In development <i class="material-icons">handyman</i>
+          For deployment
         </p>
         </div>
        
@@ -187,12 +187,15 @@ function App() {
           </div>
           </Fade>
         </div>
-
+        
+        {/*
         <div className="content-container">
           <p className="content-para">
           Interested in a 5% commission? Please <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/DotBrgy-Letter.docx'} download>click here to download</a> the letter and contact me for information.
           </p> 
         </div>
+        */}
+     
 
          {/*Transaksyon Tracer*/}
 
@@ -202,8 +205,8 @@ function App() {
           <img src={process.env.PUBLIC_URL + '/images/transaksyonTracer.png'} alt="tracer"/>
         </div>
         </a>
-        <p className="center">
-          For deployment <i class="material-icons">airplanemode_active</i>
+        <p>
+          For deployment
         </p>
         </div>
         <div className="content-container">
@@ -244,8 +247,8 @@ function App() {
           <img src={process.env.PUBLIC_URL + '/images/sdaHimnoLogo.png'} alt="himno"/>
         </div>
         </a>
-        <p className="center">
-          For deployment <i class="material-icons">airplanemode_active</i>
+        <p>
+          For deployment
         </p>
         </div>
         <div className="content-container">
@@ -362,7 +365,7 @@ function App() {
         </div>
         </a>
         <p className="center" style={{color: "gray"}}>
-          In development <i class="material-icons">handyman</i>
+          In development
         </p>
         </div>
         <div className="content-container">
@@ -370,10 +373,31 @@ function App() {
             AYDI
           </h2>
           <p className="content-para" style={{color: "gray"}}>
-            The app is under development.
+            The software is under development.
           </p> 
+          <h1>
+            Be the first to try out this apps!
+          </h1>
         </div>
-      
+
+        <div className="content-container">
+        <Fade left>
+        <div className="curves">
+          <h1>
+            My Partners
+          </h1>
+          </div>
+          </Fade>
+        </div>
+        <div className="partners">
+        <div className="partner-container">
+        <Fade bottom>
+          <div className="partner">
+            <img src={process.env.PUBLIC_URL + '/images/lubayat.png'} alt="himnoTwo"/>
+          </div>
+          </Fade>
+        </div>
+        </div>
       <div className="content-container">
       <Fade left>
           <div className="curves">
@@ -383,9 +407,7 @@ function App() {
             </div>
             </Fade>
           </div>
-
-         
-          <div className="cards-project">
+      <div className="cards-project">
         <Fade bottom>
           <div className="project-container">
             <div className="services">
@@ -427,6 +449,19 @@ function App() {
           </div>
           </Fade>
         </div>
+
+        {/*
+          <div className="partners">
+        <div className="partner-container">
+        <Fade bottom>
+          <div className="partner">
+            <img className="project-img" src={process.env.PUBLIC_URL + '/images/lubayat.png'} alt="himnoTwo"/>
+          </div>
+          </Fade>
+        </div>
+        </div>
+        */}
+      
 
 
         {/*contacts*/}
