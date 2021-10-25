@@ -65,6 +65,7 @@ body {
 .hyper-link{
   color: gray;
   text-decoration: underline;
+  text-decoration-color: #65ffa0;
 }
 
 div.content-update {

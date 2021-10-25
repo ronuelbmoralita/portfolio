@@ -353,7 +353,7 @@ function App() {
         
         <div className="content-container">
           <p className="content-para">
-            Feel free to contact me for any software bugs that will possibly occur.  Send your feedback or suggestion for better usage of the app. <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/SDAHimnoSetup.zip'} download>Click here to download for free.</a>
+            Contact me for any software bugs that will possibly occur.  Send your feedback or suggestion for better usage of the app. <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/SDAHimnoSetup.zip'} download>Click here to download for free.</a>
           </p> 
         </div>
       </div>
@@ -375,18 +375,20 @@ function App() {
             AYDI
           </h2>
           <p className="content-para" style={{color: "gray"}}>
-            The software is under development.
+            The software is under development. <i class="material-icons">settings</i>
           </p> 
-          <h1>
-            Be the first to try out this apps!
+          {/*
+           <h1>
+          <a className="hyper-link"  href="#contact">Be the first to try out this apps!</a>
           </h1>
+          */}
         </div>
 
         <div className="content-container">
         <Fade left>
         <div className="curves">
           <h1>
-            My Partner
+            Partnership
           </h1>
           </div>
           </Fade>
@@ -400,7 +402,7 @@ function App() {
         </div>
         <div className="content-container">
           <p className="content-para">
-            Interested in Partnership? <a className="hyper-link"  href="#contact">Contact me</a>
+            I'm always looking for the opportunity. Interested in Partnership? <a className="hyper-link"  href="#contact">Please contact me</a>
           </p> 
         </div>
       <div className="content-container">
