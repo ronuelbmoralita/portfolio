@@ -375,7 +375,7 @@ function App() {
             AYDI
           </h2>
           <p className="content-para" style={{color: "gray"}}>
-            The software is under development. <i class="material-icons">settings</i>
+            The software is under development. <i class="material-icons">build</i>
           </p> 
           {/*
            <h1>
@@ -448,7 +448,7 @@ function App() {
           <Fade bottom>
           <div className="project-container">
           <div className="services">
-          <i class="material-icons">developer_mode</i>
+          <i class="material-icons">code</i>
           <p>
            Technical Support
             </p>
