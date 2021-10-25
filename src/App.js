@@ -20,9 +20,12 @@ weekday[6] = "Sabbath";
 
 var n = weekday[d.getDay()];
 
-
-
 function App() {
+  if (window.performance) {
+    if (performance.navigation.type == 1) {
+      window.location = "https://ronuelbmoralita.github.io/" 
+     }
+  }
   {/*
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -350,8 +353,7 @@ function App() {
         
         <div className="content-container">
           <p className="content-para">
-            Feel free to contact me for any software bugs that will possibly occur.  Send your feedback or suggestion for better usage of the app.
-            <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/SDAHimnoSetup.zip'} download>Click here to download</a>
+            Feel free to contact me for any software bugs that will possibly occur.  Send your feedback or suggestion for better usage of the app. <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/SDAHimnoSetup.zip'} download>Click here to download for free.</a>
           </p> 
         </div>
       </div>
@@ -384,19 +386,22 @@ function App() {
         <Fade left>
         <div className="curves">
           <h1>
-            My Partners
+            My Partner
           </h1>
           </div>
           </Fade>
         </div>
-        <div className="partners">
         <div className="partner-container">
         <Fade bottom>
           <div className="partner">
-            <img src={process.env.PUBLIC_URL + '/images/lubayat.png'} alt="himnoTwo"/>
+            <img src={process.env.PUBLIC_URL + '/images/lubayat.png'} alt="lubayat"/>
           </div>
           </Fade>
         </div>
+        <div className="content-container">
+          <p className="content-para">
+            Interested in Partnership? <a className="hyper-link"  href="#contact">Contact me</a>
+          </p> 
         </div>
       <div className="content-container">
       <Fade left>
