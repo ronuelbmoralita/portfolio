@@ -139,7 +139,7 @@ function App() {
          {/*DotBrgy*/}
 
         <div className="center">
-        <a href="tel:+63963510762">
+        <a href="https://github.com/ronuelbmoralita/DotBrgy">
         <div className="project-shadow">
           <img src={process.env.PUBLIC_URL + '/images/dotbrgy.png'} alt="dotBrgy"/>
         </div>
@@ -203,7 +203,7 @@ function App() {
          {/*Transaksyon Tracer*/}
 
         <div className="center">
-        <a href="tel:+63963510762">
+        <a href="https://github.com/ronuelbmoralita/Transaksyon-Tracer">
         <div className="project-shadow">
           <img src={process.env.PUBLIC_URL + '/images/transaksyonTracer.png'} alt="tracer"/>
         </div>
@@ -245,7 +245,7 @@ function App() {
 
         {/*SDA Himno*/}
         <div className="center">
-        <a href="tel:+63963510762">
+        <a href="https://github.com/ronuelbmoralita/SDA-Himno">
         <div className="project-shadow">
           <img src={process.env.PUBLIC_URL + '/images/sdaHimnoLogo.png'} alt="himno"/>
         </div>
