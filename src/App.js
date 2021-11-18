@@ -4,6 +4,7 @@ import Home from './components/home';
 import './css/style.css';
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
+import Flip from 'react-reveal/Flip';
 
 
 //import Sample from './components/image'
@@ -22,12 +23,13 @@ var n = weekday[d.getDay()];
 
 
 function App() {
-  if (window.performance) {
+  {/*
+    if (window.performance) {
     if (performance.navigation.type == 1) {
       window.location = "https://ronuelbmoralita.github.io/" 
      }
   }
-
+  */}
   const [date , setDate] = useState();
 
   const getYear = () =>  setDate(new Date().getFullYear())
@@ -78,7 +80,7 @@ function App() {
           {/* 
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
-          <Jump>
+           <Flip top>
             <h1>
               Hi! I'm Ronuel
             </h1>
@@ -89,7 +91,7 @@ function App() {
                 </span>
               </span>
             </div>
-            </Jump>
+            </Flip>
           </div>
 
           <div className="arrow-container">
@@ -103,14 +105,14 @@ function App() {
       {/*about*/}
       <div className="about">
         <div className="content-container">
-        <Fade left>
+        <Flip bottom>
         <div className="curves">
           <h1>
             About me
           </h1>
           </div>
-          </Fade>
-          <Fade right>
+          </Flip>
+          <Fade bottom>
           <p className="content-para">
           I work as a Computer Programmer at some Local Government Unit. My experience developing, maintaining, debugging, and troubleshooting systems and software has fueled my curiosity in knowing new and existing technologies.           
           {/*During my spare time, I work on the frontend and backend of a website, desktop, and mobile application and learn new things about technology.*/}
@@ -131,14 +133,14 @@ function App() {
 
       <div className="projects">
         <div className="content-container">
-        <Fade left>
+        <Flip bottom>
         <div className="curves">
           <h1>
             Projects
           </h1>
           </div>
-          </Fade>
-          <Fade right>
+          </Flip>
+          <Fade bottom>
           <p className="content-para">
             Here are some of my projects that are currently in development and for deployment.
           </p> 
@@ -395,13 +397,13 @@ function App() {
         </div>
 
         <div className="content-container">
-        <Fade left>
+        <Flip bottom>
         <div className="curves">
           <h1>
             Partners
           </h1>
           </div>
-          </Fade>
+          </Flip>
         </div>
         <div className="partner-container">
         <Fade bottom>
@@ -419,13 +421,13 @@ function App() {
 
       {/*services*/}
       <div className="content-container">
-      <Fade left>
+      <Flip bottom>
           <div className="curves">
             <h1>
              Services
             </h1>
             </div>
-            </Fade>
+            </Flip>
           </div>
       <div className="cards-project">
         <Fade bottom>
@@ -485,13 +487,13 @@ function App() {
 
       {/*credentials*/}  
       <div className="content-container">
-        <Fade left>
+        <Flip bottom>
         <div className="curves">
           <h1>
             Credentials
           </h1>
           </div>
-          </Fade>
+          </Flip>
         </div>
         <div className="content-container">
         <Fade bottom>
@@ -504,7 +506,7 @@ function App() {
        
         <div className="contacts" id="contact">
           <div className="content-container">
-          <Fade left>
+          <Flip bottom>
           <div className="curves">
             <h1>
               Contacts
@@ -515,8 +517,8 @@ function App() {
               Let's Connect!
             </h1>
             </Jump>
-            </Fade>
-            <Fade right>
+            </Flip>
+            <Fade bottom>
             <p className="content-para">
               Feel free to contact me anytime except on Saturdays. Get in touch here:
             </p>
