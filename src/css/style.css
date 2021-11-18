@@ -582,6 +582,11 @@ div.services p{
   width: 100%;
 }
 
+footer{
+  text-align: center;
+  padding: 2em;
+}
+
 /*END*/
 
   /*DESKTOP*/

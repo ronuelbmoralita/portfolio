@@ -20,12 +20,22 @@ weekday[6] = "Sabbath";
 
 var n = weekday[d.getDay()];
 
+
 function App() {
   if (window.performance) {
     if (performance.navigation.type == 1) {
       window.location = "https://ronuelbmoralita.github.io/" 
      }
   }
+
+  const [date , setDate] = useState();
+
+  const getYear = () =>  setDate(new Date().getFullYear())
+
+
+  useEffect(() => {
+      getYear();
+  }, [])
   {/*
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -530,8 +540,8 @@ function App() {
            */}
         </div>
         {/*end div tag*/} 
+        <footer>&copy; Ronuel Moralita - {date}</footer>
     </div>
-
 );
 }
 export default App;
