@@ -388,7 +388,7 @@ function App() {
         <Fade left>
         <div className="curves">
           <h1>
-            Partnership
+            Partners
           </h1>
           </div>
           </Fade>
@@ -402,9 +402,12 @@ function App() {
         </div>
         <div className="content-container">
           <p className="content-para">
-            I'm always looking for the opportunity. Interested in Partnership? <a className="hyper-link"  href="#contact">Please contact me</a>
+            Interested in Partnership? <a className="hyper-link"  href="#contact">Please contact me</a>
           </p> 
         </div>
+
+
+      {/*services*/}
       <div className="content-container">
       <Fade left>
           <div className="curves">
@@ -468,8 +471,24 @@ function App() {
         </div>
         </div>
         */}
-      
 
+
+      {/*credentials*/}  
+      <div className="content-container">
+        <Fade left>
+        <div className="curves">
+          <h1>
+            Credentials
+          </h1>
+          </div>
+          </Fade>
+        </div>
+        <div className="content-container">
+        <Fade bottom>
+          <img className="credentials" src={process.env.PUBLIC_URL + '/images/rwd.png'} alt="school"/> 
+         </Fade>
+         <a className="hyper-link" href="https://www.freecodecamp.org/certification/ronuelbmoralita/responsive-web-design">Show Certification</a>
+        </div>
 
         {/*contacts*/}
        
