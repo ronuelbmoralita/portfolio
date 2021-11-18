@@ -540,7 +540,7 @@ function App() {
            */}
         </div>
         {/*end div tag*/} 
-        <footer>&copy; Ronuel Moralita - {date}</footer>
+        <footer>&copy; {date} Ronuel Moralita</footer>
     </div>
 );
 }
