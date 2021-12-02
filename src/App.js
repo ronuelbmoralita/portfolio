@@ -443,7 +443,7 @@ function App() {
             </Flip>
             <Fade bottom>
           <p className="content-para">
-            Let's bring your customized website, mobile or desktop application into the offline/online world.
+            Let's bring your customized website, mobile or desktop application into the world of technology.
           </p> 
           </Fade>
       </div>
