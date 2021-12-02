@@ -114,11 +114,17 @@ function App() {
           </Flip>
           <Fade bottom>
           <p className="content-para">
-          I work as a Computer Programmer at some Local Government Unit. My experience developing, maintaining, debugging, and troubleshooting systems and software has fueled my curiosity in knowing new and existing technologies.           
+          I work as a Computer Programmer in our Local Government Unit. I developed and deployed Transaksyon Tracer.          
           {/*During my spare time, I work on the frontend and backend of a website, desktop, and mobile application and learn new things about technology.*/}
             </p>
             </Fade>
+          <Fade bottom>
+          <p className="content-para">
+            With the mix of my technical expertise and experience, I provide quality software solutions at an affordable cost. <a className="hyper-link"  href="#service-link">Services</a>
+           </p>
+            </Fade>
         </div>
+        {/* 
         <div className="content-container">
         <Fade bottom>
           <img className="school" src={process.env.PUBLIC_URL + '/images/school.jpg'} alt="school"/> 
@@ -127,6 +133,7 @@ function App() {
             I studied B.Sc. in Computer Science at Eulogio “Amang” Rodriguez Institute of Science and Technology (EARIST) Class of 2019.
           </p>
         </div>
+        */}
       </div>
 
       {/*PROJECTS*/}
@@ -404,6 +411,11 @@ function App() {
           </h1>
           </div>
           </Flip>
+          <Fade bottom>
+          <p className="content-para">
+            DotBrgy Software will be available soon at Barangay Lubayat, Real, Quezon Province.
+          </p> 
+          </Fade>
         </div>
         <div className="partner-container">
         <Fade bottom>
@@ -420,6 +432,7 @@ function App() {
 
 
       {/*services*/}
+      <div className="services-link" id="service-link">
       <div className="content-container">
       <Flip bottom>
           <div className="curves">
@@ -428,7 +441,13 @@ function App() {
             </h1>
             </div>
             </Flip>
-          </div>
+            <Fade bottom>
+          <p className="content-para">
+            Let's bring your customized website, mobile or desktop application into the offline/online world.
+          </p> 
+          </Fade>
+      </div>
+      </div>
       <div className="cards-project">
         <Fade bottom>
           <div className="project-container">
