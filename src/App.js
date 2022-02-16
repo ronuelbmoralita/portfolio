@@ -262,7 +262,7 @@ function App() {
             </Fade>
         </div>
 
-        {/*SDA Himno*/}
+        {/*SDA Himno
         <div className="center">
         <a href="tel:+63963510762">
         <div className="project-shadow">
@@ -280,7 +280,6 @@ function App() {
           <p className="content-para">
             A desktop application of the Seventh Day Adventist Hymnal. This App contains the Tagalog hymns for your worship. The appication runs locally on the device and doesn't require anything else to be functional.
           </p> 
-          {/*
            <video controls autoPlay>
             <source src="./videos/gcash-video.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
@@ -330,8 +329,7 @@ function App() {
               <h5>SDA Himno</h5>
               <h4>SDA Himno</h4>
               <h3>SDA Himno</h3>
-            </div> 
-            */}
+            </div>
         </div>
 
         <div className="content-container">
@@ -362,19 +360,18 @@ function App() {
           </Fade>
         </div>
 
-        {/*
         <div className="content-container">
           <p className="content-para">
             Part of your donation will go to REINA district-wide ministry and for the renovation of our church. 
           </p> 
         </div>
-        */}
         
         <div className="content-container">
           <p className="content-para">
             Contact me for any software bugs that will possibly occur.  Send your feedback or suggestion for better usage of the app. <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/SDAHimnoSetup.zip'} download>Click here to download for free.</a>
           </p> 
         </div>
+        */}
       </div>
 
       {/*AYDI*/}
