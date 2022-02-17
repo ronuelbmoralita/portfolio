@@ -32,12 +32,6 @@ function App () {
      }
   }
   */}
-
-  const fadeLeft = {
-    hidden: { opacity: 0, x: -1000},
-    visible: {opacity: 1, x: 0}
-  }
-  
   const [date , setDate] = useState();
 
   const getYear = () =>  setDate(new Date().getFullYear())
@@ -90,16 +84,16 @@ function App () {
           {/* 
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
-            <motion.h1 initial={{opacity: 1}} animate={{scale: 1.5}} transition={{duration: 1}}>
+            <motion.h1 initial={{opacity: 1}}  animate={{scale: 1.5}} transition={{duration: .5}}>
               Hi! I'm Ronuel
             </motion.h1>
-            <div className="span-container">
-              <motion.span variants={fadeLeft} initial='hidden' animate='visible' transition={{duration: 2}}>
+            <motion.div  initial={{x: '-100vw'}} animate={{x: 1, duration: 2}} className="span-container">
+              <span>
                 How's your <span style={{color: 'gray'}}>
                 {n}?
                 </span>
-              </motion.span>
-            </div>
+              </span>
+            </motion.div>
           </div>
 
           <div className="arrow-container">
