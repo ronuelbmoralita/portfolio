@@ -6,6 +6,8 @@ import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
 import Flip from 'react-reveal/Flip';
 
+import { motion, AnimatePresence } from "framer-motion";
+
 
 //import Sample from './components/image'
 
@@ -22,7 +24,7 @@ weekday[6] = "Sabbath";
 var n = weekday[d.getDay()];
 
 
-function App() {
+function App () {
   {/*
     if (window.performance) {
     if (performance.navigation.type == 1) {
@@ -30,6 +32,12 @@ function App() {
      }
   }
   */}
+
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -1000},
+    visible: {opacity: 1, x: 0}
+  }
+  
   const [date , setDate] = useState();
 
   const getYear = () =>  setDate(new Date().getFullYear())
@@ -47,6 +55,8 @@ function App() {
 
     return () => window.removeEventListener("scroll", handleScroll);
     }, []);*/}
+
+  
     return (
       <div>
 
@@ -80,18 +90,16 @@ function App() {
           {/* 
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
-           <Flip top>
-            <h1>
+            <motion.h1 initial={{opacity: 1}} animate={{scale: 1.5}} transition={{duration: 1}}>
               Hi! I'm Ronuel
-            </h1>
+            </motion.h1>
             <div className="span-container">
-              <span style={{color: 'black'}}>
+              <motion.span variants={fadeLeft} initial='hidden' animate='visible' transition={{duration: 2}}>
                 How's your <span style={{color: 'gray'}}>
                 {n}?
                 </span>
-              </span>
+              </motion.span>
             </div>
-            </Flip>
           </div>
 
           <div className="arrow-container">
