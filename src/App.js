@@ -6,8 +6,9 @@ import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
 import Flip from 'react-reveal/Flip';
 
-import { motion, AnimatePresence } from "framer-motion";
-
+import { motion, AnimatePresence, useAnimation } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+import { animation } from "react-reveal/globals";
 
 //import Sample from './components/image'
 
@@ -32,6 +33,24 @@ function App () {
      }
   }
   */}
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        y: 1,
+        transition:{
+          type: 'spring', duration: 1, bounce: 0.3
+        }
+      });
+    }
+    if(!inView){
+      animation.start({y: '10vw'})
+    }
+    console.log("use effect, inView =", inView)
+  }, [inView]);
+
   const [date , setDate] = useState();
 
   const getYear = () =>  setDate(new Date().getFullYear())
@@ -106,14 +125,12 @@ function App () {
 
       {/*about*/}
       <div className="about">
-        <div className="content-container">
-        <Flip bottom>
+      <motion.div ref={ref} animate={animation} className="content-container">
         <div className="curves">
           <h1>
             About me
           </h1>
           </div>
-          </Flip>
           <Fade bottom>
           <p className="content-para">
           I work as a Computer Programmer in our Local Government Unit. I developed and deployed Transaksyon Tracer.          
@@ -125,7 +142,7 @@ function App () {
             With the mix of my technical expertise and experience, I provide quality software solutions at an affordable cost. <a className="hyper-link"  href="#service-link">Services</a>
            </p>
             </Fade>
-        </div>
+        </motion.div>
         {/* 
         <div className="content-container">
         <Fade bottom>
@@ -141,20 +158,16 @@ function App () {
       {/*PROJECTS*/}
 
       <div className="projects">
-        <div className="content-container">
-        <Flip bottom>
+        <motion.div ref={ref} animate={animation} className="content-container">
         <div className="curves">
           <h1>
             Projects
           </h1>
           </div>
-          </Flip>
-          <Fade bottom>
           <p className="content-para">
             Here are some of my projects that are currently in development and for deployment.
           </p> 
-          </Fade>
-        </div>
+        </motion.div>
 
 
          {/*DotBrgy*/}
@@ -393,7 +406,7 @@ function App () {
             AYDI
           </h2>
           <p className="content-para" style={{color: "gray"}}>
-            The software is under development. <i class="material-icons">build</i>
+            The software is under development. <i className="material-icons">build</i>
           </p> 
           {/*
            <h1>
@@ -451,7 +464,7 @@ function App () {
         <Fade bottom>
           <div className="project-container">
             <div className="services">
-            <i class="material-icons">desktop_windows</i>
+            <i className="material-icons">desktop_windows</i>
             <p>
             Desktop Development
             </p>
@@ -461,7 +474,7 @@ function App () {
           <Fade bottom>
           <div className="project-container">
           <div className="services">
-          <i class="material-icons">android</i>
+          <i className="material-icons">android</i>
           <p>
            Mobile app Development
             </p>
@@ -471,7 +484,7 @@ function App () {
           <Fade bottom>
           <div className="project-container">
           <div className="services">
-          <i class="material-icons">language</i>
+          <i className="material-icons">language</i>
           <p>
            Web Development
             </p>
@@ -481,7 +494,7 @@ function App () {
           <Fade bottom>
           <div className="project-container">
           <div className="services">
-          <i class="material-icons">code</i>
+          <i className="material-icons">code</i>
           <p>
            Technical Support
             </p>
