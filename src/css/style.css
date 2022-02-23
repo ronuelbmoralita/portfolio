@@ -605,5 +605,32 @@ footer{
 }
 
 
+.item{
+  min-height: 15rem;
+  width: 100%;
+}
+
+.item img{
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.inner-carousel{
+  display: flex;
+  padding: 1em;
+  width: 100%;
+}
+
+
+.carousel{
+  cursor: grab;
+  overflow: hidden;
+  background-color: #4267B2;
+}
+
+
+
 
 

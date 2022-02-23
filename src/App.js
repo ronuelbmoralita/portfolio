@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import './App.css';
 import Home from './components/home';
 import './css/style.css';
-import Fade from 'react-reveal/Fade';
-import Jump from 'react-reveal/Jump';
-import Flip from 'react-reveal/Flip';
+import images from "./images";
 
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-import { animation } from "react-reveal/globals";
 
 //import Sample from './components/image'
+
+console.log(images);
+
 
 var d = new Date();
 var weekday = new Array(7);
@@ -33,23 +33,87 @@ function App () {
      }
   }
   */}
+
+
+  function FadeInWhenVisible({ children }) {
+    return (
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ y: 100 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 0 }
+        }}
+      >
+        {children}
+      </motion.div>
+    );
+  }
+
+  function SlideUp({ children }) {
+    return (
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{
+          delay: 0, type: 'spring', duration: 1, bounce: 0.3, visibility: 'hidden'
+        }}
+        variants={{
+          visible: { opacity: 1, y: 0  },
+          hidden: { opacity: 0, y: '10vw' }
+        }}
+      >
+        {children}
+      </motion.div>
+    );
+  }
+
+  function ContactTransition({ children }) {
+    return (
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{
+          delay: 0, type: 'spring', duration: 1, bounce: 0.5, visibility: 'hidden'
+        }}
+        variants={{
+          visible: { opacity: 1, y: 0  },
+          hidden: { opacity: 0, y: '10vw' }
+        }}
+      >
+        {children}
+      </motion.div>
+    );
+  }
+  
+  
   const { ref, inView } = useInView();
   const animation = useAnimation();
 
   useEffect(() => {
     if(inView){
       animation.start({
-        y: 1,
+        x: 0,
         transition:{
-          type: 'spring', duration: 1, bounce: 0.3
+          delay: 0.7, type: 'spring', duration: 1, bounce: 0.3, visibility: 'hidden'
         }
       });
     }
-    if(!inView){
-      animation.start({y: '10vw'})
-    }
-    console.log("use effect, inView =", inView)
   }, [inView]);
+
+
+  const [width, setWidth] = useState(0);
+
+  const carousel = useRef();
+
+
+  //useEffect(()=>{
+  //  setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  //}, []);
 
   const [date , setDate] = useState();
 
@@ -106,13 +170,13 @@ function App () {
             <motion.h1 initial={{opacity: 1}}  animate={{scale: 1.5}} transition={{duration: .5}}>
               Hi! I'm Ronuel
             </motion.h1>
-            <motion.div  initial={{x: '-100vw'}} animate={{x: 1, duration: 2}} className="span-container">
+            <motion.div initial={{x: '-100vw'}} animate={{x: 1, duration: 2}} className="span-container">
               <span>
                 How's your <span style={{color: 'gray'}}>
                 {n}?
                 </span>
               </span>
-            </motion.div>
+              </motion.div>
           </div>
 
           <div className="arrow-container">
@@ -125,24 +189,24 @@ function App () {
 
       {/*about*/}
       <div className="about">
-      <motion.div ref={ref} animate={animation} className="content-container">
+      <div className="content-container">
+      <FadeInWhenVisible>
         <div className="curves">
           <h1>
             About me
           </h1>
           </div>
-          <Fade bottom>
+          </FadeInWhenVisible>
+          <SlideUp>
           <p className="content-para">
           I work as a Computer Programmer in our Local Government Unit. I developed and deployed Transaksyon Tracer.          
           {/*During my spare time, I work on the frontend and backend of a website, desktop, and mobile application and learn new things about technology.*/}
             </p>
-            </Fade>
-          <Fade bottom>
           <p className="content-para">
             With the mix of my technical expertise and experience, I provide quality software solutions at an affordable cost. <a className="hyper-link"  href="#service-link">Services</a>
            </p>
-            </Fade>
-        </motion.div>
+          </SlideUp>
+        </div>
         {/* 
         <div className="content-container">
         <Fade bottom>
@@ -158,16 +222,20 @@ function App () {
       {/*PROJECTS*/}
 
       <div className="projects">
-        <motion.div ref={ref} animate={animation} className="content-container">
+        <div className="content-container">
+        <FadeInWhenVisible>
         <div className="curves">
           <h1>
             Projects
           </h1>
           </div>
+          </FadeInWhenVisible>
+          <SlideUp>
           <p className="content-para">
             Here are some of my projects that are currently in development and for deployment.
           </p> 
-        </motion.div>
+          </SlideUp>
+        </div>
 
 
          {/*DotBrgy*/}
@@ -192,39 +260,61 @@ function App () {
           </p> 
         </div>
 
+
+
+          {/*
+        <SlideUp>
+        <motion.div className="carousel">
+            <motion.div drag="x" ref={carousel} dragConstraints={{right: 0, left: -width}} whileTap={{cursor: "grabbing"}} className="inner-carousel">
+              {images.map(image =>{
+                return(
+                  <motion.div whileHover={{
+                    scale: 1.1,
+                    textShadow: "0px 0px 4px gray"
+                  }} className="item" key={image}>
+                    <img src={image} alt=""/>
+                  </motion.div>
+                ); 
+              })}
+            </motion.div>
+          </motion.div>
+        </SlideUp>
+            */}
+      
+        
         <div className="cards-project">
-        <Fade bottom>
+        
+        <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db1.png'} alt="transaksyonOne"/>
           </div>
-          </Fade>
-          <Fade bottom>
+          </SlideUp>
+          <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db2.png'} alt="transaksyonTwo"/>
           </div>
-          </Fade>
-          <Fade bottom>
+          </SlideUp>
+          <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db3.png'} alt="transaksyonthree"/>
           </div>
-          </Fade>
-          <Fade bottom>
+          </SlideUp>
+          <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db4.png'} alt="transaksyonfour"/>
             </div>
-            </Fade>
-            <Fade bottom>
+            </SlideUp>
+            <SlideUp>
             <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db5.png'} alt="transaksyonthree"/>
           </div>
-          </Fade>
-          <Fade bottom>
+          </SlideUp>
+          <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db6.png'} alt="transaksyonfour"/>
           </div>
-          </Fade>
+          </SlideUp>
         </div>
-        
         {/*
         <div className="content-container">
           <p className="content-para">
@@ -255,26 +345,26 @@ function App () {
           </p> 
         </div>
         <div className="cards-project">
-        <Fade bottom>
+        <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/transaksyonOne.png'} alt="transaksyonOne"/>
           </div>
-          </Fade>
-          <Fade bottom>
+          </SlideUp>
+          <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/transaksyonTwo.png'} alt="transaksyonTwo"/>
           </div>
-          </Fade>
-          <Fade bottom>
+          </SlideUp>
+          <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/transaksyonThree.png'} alt="transaksyonthree"/>
           </div>
-          </Fade>
-          <Fade bottom>
+          </SlideUp>
+          <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/transaksyonFour.png'} alt="transaksyonfour"/>
             </div>
-            </Fade>
+            </SlideUp>
         </div>
 
         {/*SDA Himno
@@ -416,25 +506,21 @@ function App () {
         </div>
 
         <div className="content-container">
-        <Flip bottom>
+        <FadeInWhenVisible>
         <div className="curves">
           <h1>
             Partners
           </h1>
           </div>
-          </Flip>
-          <Fade bottom>
+          </FadeInWhenVisible>
           <p className="content-para">
             DotBrgy Software will be available soon at Barangay Lubayat, Real, Quezon Province.
           </p> 
-          </Fade>
         </div>
         <div className="partner-container">
-        <Fade bottom>
           <div className="partner">
             <img src={process.env.PUBLIC_URL + '/images/lubayat.png'} alt="lubayat"/>
           </div>
-          </Fade>
         </div>
         <div className="content-container">
           <p className="content-para">
@@ -446,61 +532,59 @@ function App () {
       {/*services*/}
       <div className="services-link" id="service-link">
       <div className="content-container">
-      <Flip bottom>
-          <div className="curves">
+      <FadeInWhenVisible>
+        <div className="curves">
             <h1>
              Services
             </h1>
             </div>
-            </Flip>
-            <Fade bottom>
+            </FadeInWhenVisible>
           <p className="content-para">
             Let's bring your customized website, mobile or desktop application into the world of technology.
           </p> 
-          </Fade>
       </div>
       </div>
       <div className="cards-project">
-        <Fade bottom>
           <div className="project-container">
+          <SlideUp>
             <div className="services">
             <i className="material-icons">desktop_windows</i>
             <p>
             Desktop Development
             </p>
-            </div>         
+            </div>   
+            </SlideUp>      
           </div>
-          </Fade>
-          <Fade bottom>
           <div className="project-container">
+          <SlideUp>
           <div className="services">
           <i className="material-icons">android</i>
           <p>
            Mobile app Development
             </p>
-            </div>         
+            </div>  
+            </SlideUp>       
           </div>
-          </Fade>
-          <Fade bottom>
           <div className="project-container">
+          <SlideUp>
           <div className="services">
           <i className="material-icons">language</i>
           <p>
            Web Development
             </p>
-            </div>         
+            </div>
+            </SlideUp>         
           </div>
-          </Fade>
-          <Fade bottom>
           <div className="project-container">
+          <SlideUp>
           <div className="services">
           <i className="material-icons">code</i>
           <p>
            Technical Support
             </p>
-            </div>         
+            </div>  
+            </SlideUp>       
           </div>
-          </Fade>
         </div>
 
         {/*
@@ -518,42 +602,38 @@ function App () {
 
       {/*credentials*/}  
       <div className="content-container">
-        <Flip bottom>
+      <FadeInWhenVisible>
         <div className="curves">
           <h1>
             Credentials
           </h1>
           </div>
-          </Flip>
+          </FadeInWhenVisible>
         </div>
         <div className="content-container">
-        <Fade bottom>
           <img className="credentials" src={process.env.PUBLIC_URL + '/images/rwd.png'} alt="school"/> 
-         </Fade>
          <a className="hyper-link" href="https://www.freecodecamp.org/certification/ronuelbmoralita/responsive-web-design">Show Certification</a>
         </div>
 
         {/*contacts*/}
-       
+        
         <div className="contacts" id="contact">
           <div className="content-container">
-          <Flip bottom>
+          <FadeInWhenVisible>
           <div className="curves">
             <h1>
               Contacts
             </h1>
             </div>
-            <Jump>
+            </FadeInWhenVisible>
+            <ContactTransition>
             <h1 className="center">
               Let's Connect!
             </h1>
-            </Jump>
-            </Flip>
-            <Fade bottom>
             <p className="content-para">
               Feel free to contact me anytime except on Saturdays. Get in touch here:
             </p>
-            </Fade>
+            </ContactTransition>
           </div>
           <div className="social">
             <span>
@@ -566,6 +646,7 @@ function App () {
               <a className="gmail" href="mailto: moralitaronuel@gmail.com">Email</a>
             </span>
           </div>  
+          
           {/* 
           <div className="vm">
             <p>“Let's build something that will create more.”</p>
