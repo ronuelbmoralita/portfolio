@@ -15,9 +15,12 @@ html {
 body {
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
 }
 
+
+/*font-family: 'Montserrat', sans-serif;
+//font-family: 'Anonymous Pro', monospace;*/
 
 /*UNIVERSAL-ELEMENTS*/
 /*MOBILE*/
@@ -622,7 +625,6 @@ footer{
   padding: 1em;
   width: 100%;
 }
-
 
 .carousel{
   cursor: grab;
