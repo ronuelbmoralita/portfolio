@@ -498,6 +498,7 @@ div.contacts span{
 }
 
 div.social {
+  font-weight: bold;
   font-size: 1em;
   width: 100%;
   padding-top: 1em;
