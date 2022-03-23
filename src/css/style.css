@@ -493,12 +493,12 @@ div.contacts a {
 }
 
 div.contacts span{
-  padding: 1em;
+  padding: 2em;
   width: 100%;
 }
 
 div.social {
-  font-size: 1.5em;
+  font-size: 1em;
   width: 100%;
   padding-top: 1em;
   text-align: center;
