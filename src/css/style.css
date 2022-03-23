@@ -479,48 +479,6 @@ div.projects{
   /*box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);*/
 }
 
-/*CONTACTS*/
-
-div.contacts {
-  height: auto;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div.contacts a {
-  color: gray;
-}
-
-div.contacts span{
-  padding: 2em;
-  width: 100%;
-}
-
-div.social {
-  font-weight: bold;
-  font-size: 1em;
-  width: 100%;
-  padding-top: 1em;
-  text-align: center;
-}
-
-.calling:hover{
-  color: #65ffa0;
-}
-.fb:hover{
-  color: #4267B2;
-}
-.gmail:hover{
-  color: #DB4437;
-}
-
-div.vm p{
-  text-align: center;
-  width: 100%;
-  padding: 1em;
-}
-
 /*material you inspired*/
 
 div.curves {
@@ -586,7 +544,49 @@ div.services p{
   width: 100%;
 }
 
+/*CONTACTS*/
+
+div.contacts {
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.contacts a {
+  color: gray;
+}
+
+div.contacts span{
+  padding: 1em;
+  width: 100%;
+}
+
+div.social {
+  
+  width: 100%;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.calling:hover{
+  color: #65ffa0;
+}
+.fb:hover{
+  color: #4267B2;
+}
+.gmail:hover{
+  color: #DB4437;
+}
+
+div.vm p{
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+}
+
 footer{
+  font-size: 1em;
   text-align: center;
   margin: 4em 0em 2em 0em;
 }
