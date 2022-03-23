@@ -167,9 +167,13 @@ function App () {
           {/* 
           <img className="img" src={process.env.PUBLIC_URL + '/images/ron.png'} alt="logo"/>
           */}
+          {/* 
             <motion.h1 initial={{opacity: 1}}  animate={{scale: 1.5}} transition={{duration: .5}}>
               Hi! I'm Ronuel
-            </motion.h1>
+            </motion.h1>*/}
+            <h1>
+              Hi! I'm Ronuel
+            </h1>
             <motion.div initial={{x: '-100vw'}} animate={{x: 1, duration: 2}} className="span-container">
               <span>
                 How's your <span style={{color: 'gray'}}>

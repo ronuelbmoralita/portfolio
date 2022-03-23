@@ -270,7 +270,7 @@ header nav li a:hover:before , header nav li a:hover:after {
 /*INTRO-CONTAINER*/
 
 .intro-container{
-  font-size: 0.5em;
+  font-size: 1em;
   text-align: center;
   position: absolute;
   display:inline;
@@ -596,7 +596,7 @@ footer{
   @media screen and (min-width: 800px) {
     .intro-container{
       width: 100%;
-      font-size: 3em;
+      font-size: 4em;
     }
     .content-container {
       font-size: 1.5em;
