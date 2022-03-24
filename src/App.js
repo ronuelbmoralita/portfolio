@@ -517,15 +517,21 @@ function App () {
           </h1>
           </div>
           </FadeInWhenVisible>
-          <p className="content-para">
-            DotBrgy Software will be available soon at Barangay Lubayat, Real, Quezon Province.
-          </p> 
-        </div>
-        <div className="partner-container">
+          <div className="partner-container">
+            {/*
           <div className="partner">
             <img src={process.env.PUBLIC_URL + '/images/lubayat.png'} alt="lubayat"/>
           </div>
+        */}
         </div>
+          <img className="credentials" src={process.env.PUBLIC_URL + '/images/lubayat-sb.png'} alt="school"/> 
+          {/*
+          <p className="content-para">
+            DotBrgy Software will be available soon at Barangay Lubayat, Real, Quezon Province.
+          </p> 
+        */}
+        </div>
+        
         <div className="content-container">
           <p className="content-para">
             Interested in Partnership? <a className="hyper-link"  href="#contact">Please contact me</a>
@@ -604,7 +610,7 @@ function App () {
         */}
 
 
-      {/*credentials*/}  
+      {/*credentials
       <div className="content-container">
       <FadeInWhenVisible>
         <div className="curves">
@@ -618,7 +624,7 @@ function App () {
           <img className="credentials" src={process.env.PUBLIC_URL + '/images/rwd.png'} alt="school"/> 
          <a className="hyper-link" href="https://www.freecodecamp.org/certification/ronuelbmoralita/responsive-web-design">Show Certification</a>
         </div>
-
+        */}  
         {/*contacts*/}
         
         <div className="contacts" id="contact">
