@@ -1,8 +1,10 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useCallback } from "react";
 import './App.css';
 import Home from './components/home';
-import './css/style.css';
+import './css/style.scss';
 import images from "./images";
+
+import $ from "jquery";
 
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
@@ -22,8 +24,8 @@ weekday[4] = "Thursday";
 weekday[5] = "Friday";
 weekday[6] = "Sabbath";
 
-var n = weekday[d.getDay()];
 
+var n = weekday[d.getDay()];
 
 function App () {
   {/*
@@ -33,8 +35,6 @@ function App () {
      }
   }
   */}
-
-
   function FadeInWhenVisible({ children }) {
     return (
       <motion.div
@@ -284,10 +284,7 @@ function App () {
           </motion.div>
         </SlideUp>
             */}
-      
-        
         <div className="cards-project">
-        
         <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/db1.png'} alt="transaksyonOne"/>
@@ -371,7 +368,7 @@ function App () {
             </SlideUp>
         </div>
 
-        {/*SDA Himno
+        {/*SDA Himno */}
         <div className="center">
         <a href="tel:+63963510762">
         <div className="project-shadow">
@@ -389,6 +386,7 @@ function App () {
           <p className="content-para">
             A desktop application of the Seventh Day Adventist Hymnal. This App contains the Tagalog hymns for your worship. The appication runs locally on the device and doesn't require anything else to be functional.
           </p> 
+          {/*
            <video controls autoPlay>
             <source src="./videos/gcash-video.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
@@ -439,6 +437,7 @@ function App () {
               <h4>SDA Himno</h4>
               <h3>SDA Himno</h3>
             </div>
+            */}
         </div>
 
         <div className="content-container">
@@ -447,40 +446,41 @@ function App () {
           </p> 
         </div>
         <div className="cards-project">
-        <Fade bottom>
+        <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/sdaHimno-one.png'} alt="himnoOne"/>
           </div>
-          </Fade>
-          <Fade bottom>
+          </SlideUp>
+          <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/sdaHimno-two.png'} alt="himnoTwo"/>
           </div>
-          </Fade>
-          <Fade bottom>
+         </SlideUp>
+         <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/sdaHimno-three.png'} alt="himnothree"/>
           </div>
-          </Fade>
-          <Fade bottom>
+         </SlideUp>
+         <SlideUp>
           <div className="project-container">
               <img className="project-img" src={process.env.PUBLIC_URL + '/images/sdaHimno-four.png'} alt="himnofour"/>
           </div>
-          </Fade>
+          </SlideUp>
         </div>
 
+            {/*
         <div className="content-container">
           <p className="content-para">
             Part of your donation will go to REINA district-wide ministry and for the renovation of our church. 
           </p> 
         </div>
-        
+        */}
         <div className="content-container">
           <p className="content-para">
             Contact me for any software bugs that will possibly occur.  Send your feedback or suggestion for better usage of the app. <a className="hyper-link"  href={process.env.PUBLIC_URL + '/projects/SDAHimnoSetup.zip'} download>Click here to download for free.</a>
           </p> 
         </div>
-        */}
+       
       </div>
 
       {/*AYDI*/}
